@@ -18,6 +18,10 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Configure server middleware
+  */
+  serverMiddleware: ['~/api/index.js'],
+  /*
   ** Build configuration
   */
   build: {
@@ -36,4 +40,3 @@ module.exports = {
     }
   }
 }
-
