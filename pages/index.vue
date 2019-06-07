@@ -1,11 +1,4 @@
-<template>
-    <div class="page">
-        <h1>Page title</h1>
-    </div>
-</template>
-
 <script>
-export default {
-
-}
+import Index from '~/pages/_lang/index'
+export default Index
 </script>

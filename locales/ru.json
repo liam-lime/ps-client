@@ -1,0 +1,17 @@
+{
+    "links": {
+        "home": "Home RU",
+        "about": "About RU",
+        "english": "English version RU",
+        "russian": "Russian version RU",
+        "ukrainian": "Ukrainian version RU"
+    },
+    "home": {
+        "title": "Welcome RU",
+        "introduction": "This is an introduction in English. RU"
+    },
+    "about": {
+        "title": "About RU",
+        "introduction": "This page is made to give you more informations. RU"
+    }
+}
