@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "english": "English version",
-    "french": "French version"
+    "ukrainian": "Ukrainian version",
+    "russian": "Russian version"
   },
   "home": {
     "title": "Welcome",

@@ -5,6 +5,6 @@ export default {
   },
   plugins: ['~/plugins/i18n.js'],
   generate: {
-    routes: ['/', '/about', '/fr', '/fr/about']
+    routes: ['/', '/about', '/ua', '/ua/about', '/ru', '/ru/about']
   }
 }
