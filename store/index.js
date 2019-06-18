@@ -1,12 +1,13 @@
-export const state = () => ({
-  locales: ['en', 'ua', 'ru'],
-  locale: 'en'
-})
+import Vue from 'vue'
+import Vuex from 'vuex'
+// modules
+import locales from './modules/locales/index'
+//import blog from './modules/blog/index'
 
-export const mutations = {
-  SET_LANG(state, locale) {
-    if (state.locales.indexOf(locale) !== -1) {
-      state.locale = locale
+Vue.use(Vuex)
+
+export const store = () => new Vuex.Store({
+    modules: {
+        locales
     }
-  }
-}
+});
