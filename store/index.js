@@ -1,13 +1,16 @@
-import Vue from 'vue'
 import Vuex from 'vuex'
-// modules
-import locales from './modules/locales/index'
-//import blog from './modules/blog/index'
+import lang from './modules/lang'
+import blog from './modules/blog'
 
-Vue.use(Vuex)
 
-export const store = () => new Vuex.Store({
-    modules: {
-        locales
-    }
-});
+const store = () => {
+    return new Vuex.Store({
+        namespaced: true,
+        modules: {
+            lang,
+            blog
+        }
+    })
+}
+
+export default store
