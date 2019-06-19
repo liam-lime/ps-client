@@ -6,6 +6,6 @@ const state = {
 }
 
 export default {
-  state,
-  mutations
+    state,
+    mutations
 }

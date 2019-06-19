@@ -3,5 +3,5 @@ const state = {
 }
 
 export default {
-  state
+    state
 }
