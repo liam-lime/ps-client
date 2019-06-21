@@ -1,6 +1,6 @@
-# personalsite
+# client
 
-> Nazar Lynovetsky personal site.
+> Nuxt.js project
 
 ## Build Setup
 

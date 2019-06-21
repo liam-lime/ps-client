@@ -1,8 +1,8 @@
 {
-  "name": "personalsite",
+  "name": "client",
   "version": "1.0.0",
-  "description": "Nazar Lynovetsky personal site.",
-  "author": "Nazar Lynovetsky liamlime.hello@gmail.com",
+  "description": "Nuxt.js project",
+  "author": "nazar.lynovetsky@skynix.co <nazar.lynovetsky@skynix.co>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -13,9 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "nuxt": "^2.0.0",
-    "vue-i18n": "^8.11.2"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
