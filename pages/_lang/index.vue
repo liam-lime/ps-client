@@ -22,8 +22,10 @@ export default {
             return this.$store.getters['blog/posts']
         }
     },
-    created () {
-        this.$store.dispatch('blog/GET_POSTS')
+    async fetch ({ store }) {
+        if (!store.getters['blog/posts'].length) {
+            await store.dispatch('blog/GET_POSTS')
+        }
     }
 }
 </script>
