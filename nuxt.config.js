@@ -22,12 +22,15 @@ module.exports = {
         routes: [
             '/',
             '/about',
+            '/blog',
 
             '/ua',
             '/ua/about',
+            '/ua/blog',
 
             '/ru',
-            '/ru/about'
+            '/ru/about',
+            '/ru/blog'
         ]
     },
     build: {
