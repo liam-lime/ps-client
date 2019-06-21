@@ -1,15 +1,22 @@
 <template>
-  <div class="Content">
-    <div class="container">
-      <h1 class="Content__Title">
-        {{ $t('home.title') }}
-      </h1>
-      <p>{{ $t('home.introduction') }}</p>
-      <div v-for="post in posts" :key="post.id">
-          <h2>{{ post.title }}</h2>
-      </div>
+    <div class="page">
+
+        <section class="section">
+            <div class="container">
+                <h1 class="Content__Title">{{ $t('home.title') }}</h1>
+                <p>{{ $t('home.introduction') }}</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div v-for="post in posts" :key="post.id">
+                    <h2>{{ post.title }}</h2>
+                </div>
+            </div>
+        </section>
+
     </div>
-  </div>
 </template>
 
 <script>
