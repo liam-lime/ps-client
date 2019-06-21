@@ -1,4 +1,4 @@
-import HTTP from '~/plugins/axios'
+import { HTTP } from '~/plugins/axios'
 
 export default {
     async getPosts () {
