@@ -1,38 +1,31 @@
 <template>
     <div class="page">
-
-        <section class="section">
-            <div class="container">
-                <h1 class="Content__Title">{{ $t('home.title') }}</h1>
-                <p>{{ $t('home.introduction') }}</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div v-for="post in posts" :key="post.id">
-                    <h2>{{ post.title }}</h2>
-                </div>
-            </div>
-        </section>
-
+        <Section>
+            <h1 class="Content__Title">{{ $t('home.title') }}</h1>
+            <p>{{ $t('home.introduction') }}</p>
+        </Section>
+        <Section>
+            <PostList />
+        </Section>
     </div>
 </template>
 
 <script>
+import Section from "~/components/Section/Section"
+import PostList from "~/components/Blog/PostList"
+
 export default {
     head() {
         return { title: this.$t('home.title') }
     },
-    computed: {
-        posts () {
-            return this.$store.getters['blog/posts']
-        }
-    },
-    async fetch ({ store }) {
-        if (!store.getters['blog/posts'].length) {
-            await store.dispatch('blog/GET_POSTS')
-        }
+    components: {
+        Section,
+        PostList
     }
+    // async fetch ({ store }) {
+    //     if (!store.getters['blog/posts'].length) {
+    //         await store.dispatch('blog/GET_POSTS')
+    //     }
+    // }
 }
 </script>
