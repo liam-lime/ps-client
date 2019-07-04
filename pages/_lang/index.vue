@@ -28,7 +28,7 @@ export default {
         CallForEmail
     }
     // async fetch ({ store }) {
-    //     if (!store.getters['blog/posts'].length) {
+    //     if (!store.getters['blog/POSTS'].length) {
     //         await store.dispatch('blog/GET_POSTS')
     //     }
     // }
