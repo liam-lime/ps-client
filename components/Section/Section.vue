@@ -9,6 +9,10 @@
 <style lang="scss">
 .section {
     padding: 50px 0;
-    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid $base-border-color;
+
+    &--light-gray {
+        background: $light-gray-background-color;
+    }
 }
 </style>

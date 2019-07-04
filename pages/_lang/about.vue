@@ -4,7 +4,7 @@
             <h1>{{ $t('about.title') }}</h1>
             <p>{{ $t('about.introduction') }}</p>
         </Section>
-        <Section style="background: #F3F3F3">
+        <Section :class="'section--light-gray'">
             <CallForEmail />
         </Section>
     </div>

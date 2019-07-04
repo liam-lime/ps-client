@@ -1,10 +1,20 @@
 <template lang="html">
     <footer class="footer">
-        <div class="container">
+        <Section>
             <span>Made by Nazar Lynovetsky</span>
-        </div>
+        </Section>
     </footer>
 </template>
+
+<script>
+import Section from "~/components/Section/Section"
+
+export default {
+    components: {
+        Section
+    }
+}
+</script>
 
 <style lang="scss">
 .footer {

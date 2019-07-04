@@ -3,7 +3,7 @@
         <Section>
             <h1>Single Post</h1>
         </Section>
-        <Section style="background: #F3F3F3">
+        <Section :class="'section--light-gray'">
             <CallForEmail />
         </Section>
     </div>

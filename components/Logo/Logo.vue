@@ -16,7 +16,7 @@ export default {
 .logo {
     display: flex;
     align-items: center;
-    background: $base-background-color;
+    background: #d5e985;
     color: #fff;
 }
 </style>
