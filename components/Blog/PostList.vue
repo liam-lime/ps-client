@@ -6,7 +6,7 @@
         <template v-if="posts.length">
             <PostCard
                 v-for="post in posts"
-                :key="post.slug"
+                :key="post.id"
                 :post="post"
             />
         </template>
@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         posts () {
-            return this.$store.getters['blog/posts']
+            return this.$store.getters['blog/POSTS'][this.$store.getters['lang/LOCALE']]
         }
     }
 }

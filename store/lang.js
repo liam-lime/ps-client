@@ -10,3 +10,9 @@ export const mutations = {
         }
     }
 }
+
+export const getters = {
+    LOCALE (state) {
+        return state.locale
+    }
+}

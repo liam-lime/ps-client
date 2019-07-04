@@ -1,15 +1,16 @@
 <template>
     <div class="post-card">
-        <h3>Post title</h3>
+        <h3>{{ post.title }}</h3>
     </div>
 </template>
 
 <script>
-import PostCard from "~/components/Blog/PostCard"
-
 export default {
-    components: {
-        PostCard
+    props: {
+        post: {
+            type: Object,
+            required: true
+        }
     }
 }
 </script>
