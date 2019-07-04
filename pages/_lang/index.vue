@@ -7,7 +7,7 @@
         <Section>
             <PostList />
         </Section>
-        <Section>
+        <Section style="background: #F3F3F3">
             <CallForEmail />
         </Section>
     </div>

@@ -1,18 +1,26 @@
 <template>
-  <div class="Content">
-    <div class="container">
-      <h1 class="Content__Title">
-        {{ $t('about.title') }}
-      </h1>
-      <p>{{ $t('about.introduction') }}</p>
+    <div class="page">
+        <Section>
+            <h1>{{ $t('about.title') }}</h1>
+            <p>{{ $t('about.introduction') }}</p>
+        </Section>
+        <Section style="background: #F3F3F3">
+            <CallForEmail />
+        </Section>
     </div>
-  </div>
 </template>
 
 <script>
+import Section from "~/components/Section/Section"
+import CallForEmail from "~/components/Banners/CallForEmail"
+
 export default {
-  head() {
-    return { title: this.$t('about.title') }
-  }
+    head() {
+        return { title: this.$t('about.title') }
+    },
+    components: {
+        Section,
+        CallForEmail
+    }
 }
 </script>
