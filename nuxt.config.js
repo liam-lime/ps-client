@@ -22,7 +22,8 @@ module.exports = {
     },
     plugins: [
         '~/plugins/i18n',
-        '~/plugins/axios'
+        '~/plugins/axios',
+        '~/plugins/hammer'
     ],
     generate: {
         routes: [
