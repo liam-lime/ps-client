@@ -10,6 +10,12 @@ module.exports = {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
         ]
     },
+    modules: ['@nuxtjs/style-resources'],
+    styleResources: {
+        scss: [
+            'assets/scss/main.scss'
+        ]
+    },
     loading: { color: '#3B8070' },
     router: {
         middleware: 'i18n'

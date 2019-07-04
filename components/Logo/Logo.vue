@@ -2,22 +2,11 @@
     <div class="logo"><span class="logo__inner">Nazar Lynovetsky</span></div>
 </template>
 
-<style lang="css">
+<style lang="scss">
 .logo {
     display: flex;
     align-items: center;
-    background: #1e1a7e;
+    background: $base-color;
     color: #fff;
-}
-
-.logo::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background: #f0ef97;
-}
-
-.logo__inner {
-    padding-left: 10px;
 }
 </style>
