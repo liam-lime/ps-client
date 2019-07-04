@@ -21,9 +21,9 @@ module.exports = {
         middleware: 'i18n'
     },
     plugins: [
-        '~/plugins/i18n',
-        '~/plugins/axios',
-        '~/plugins/hammer'
+        { src: '~/plugins/i18n' },
+        { src: '~/plugins/axios' },
+        { src: '~/plugins/hammer', ssr: false }
     ],
     generate: {
         routes: [
