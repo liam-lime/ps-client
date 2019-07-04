@@ -7,12 +7,16 @@
         <Section>
             <PostList />
         </Section>
+        <Section>
+            <CallForEmail />
+        </Section>
     </div>
 </template>
 
 <script>
 import Section from "~/components/Section/Section"
 import PostList from "~/components/Blog/PostList"
+import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
     head() {
@@ -20,7 +24,8 @@ export default {
     },
     components: {
         Section,
-        PostList
+        PostList,
+        CallForEmail
     }
     // async fetch ({ store }) {
     //     if (!store.getters['blog/posts'].length) {

@@ -6,7 +6,7 @@
 .logo {
     display: flex;
     align-items: center;
-    background: $base-color;
+    background: $base-background-color;
     color: #fff;
 }
 </style>

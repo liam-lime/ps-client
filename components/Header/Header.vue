@@ -1,6 +1,5 @@
 <template>
     <header class="header">
-        <div class="container">
           <Logo />
           <nav class="menu">
             <NuxtLink :to="$i18n.path('')" class="menu__link" exact>
@@ -10,7 +9,6 @@
               {{ $t('links.about') }}
             </NuxtLink>
           </nav>
-        </div>
     </header>
 </template>
 
@@ -23,3 +21,10 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+</style>
