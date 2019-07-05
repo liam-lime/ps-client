@@ -1,6 +1,7 @@
 <template>
-    <div class="post-card">
+    <div class="post-card" @click="onOpenPost(post.slug)">
         <h3>{{ post.title }}</h3>
+        <div v-html="post.content"></div>
     </div>
 </template>
 
@@ -10,6 +11,11 @@ export default {
         post: {
             type: Object,
             required: true
+        }
+    },
+    methods: {
+        onOpenPost(slug) {
+            this.$router.push(`/blog/${slug}`)
         }
     }
 }

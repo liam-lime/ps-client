@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <Section>
-            <h1>Single Post</h1>
+            <SinglePost />
         </Section>
         <Section :class="'section--light-gray'">
             <CallForEmail />
@@ -11,6 +11,7 @@
 
 <script>
 import Section from "~/components/Section/Section"
+import SinglePost from "~/components/Blog/SinglePost"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
@@ -19,6 +20,7 @@ export default {
     },
     components: {
         Section,
+        SinglePost,
         CallForEmail
     }
 }

@@ -22,7 +22,7 @@ export default {
     },
     computed: {
         posts () {
-            return this.$store.getters['blog/POSTS'][this.$store.getters['lang/LOCALE']]
+            return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
         }
     }
 }
