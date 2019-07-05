@@ -7,9 +7,9 @@ $base-background-color: #FAFAFA;
 $light-gray-background-color: #F3F3F3;
 
 // COLORS Text
-$base-text-color: #ddd;
-$link-text-color: #ddd;
+$base-text-color: rgba(0, 0, 0, .80);
+$description-text-color: rgba(0, 0, 0, .59);
+$link-text-color: rgba(2, 158, 116, 1);
 
 // COLORS Interfaces
 $base-border-color: #EDEDED;
-$base-name-color: #fff;
