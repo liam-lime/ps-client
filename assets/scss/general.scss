@@ -1,19 +1,19 @@
 html {
     background: $base-background-color;
-    font-size: 16px;
+    font-size: $base-font-size;
 }
 
 body {
     color: $description-text-color;
     margin: 0;
-    font-family: 'Istok Web', sans-serif;
+    font-family: $base-font-family;
     font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $base-text-color;
     font-weight: 400;
-    font-family: 'EB Garamond', serif;
+    font-family: $blog-font-family;
 }
 
 h1 {

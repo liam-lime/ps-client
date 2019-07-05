@@ -1,5 +1,6 @@
 <template>
     <div class="app">
+        <Menu />
         <Header />
         <main class="main" role="main">
             <Nuxt />
@@ -9,11 +10,13 @@
 </template>
 
 <script>
+import Menu from "~/components/Menu/Menu"
 import Header from "~/components/Header/Header"
 import Footer from "~/components/Footer/Footer"
 
 export default {
     components: {
+        Menu,
         Header,
         Footer
     }

@@ -1,5 +1,5 @@
 <template>
-    <div class="logo" v-hammer:swipe.left="onSwipeLeft"><span class="logo__inner">Nazar Lynovetsky</span></div>
+    <div class="logo" v-hammer:swipe.left="onSwipeLeft"><span>Nazar Lynovetsky</span></div>
 </template>
 
 <script>
@@ -16,7 +16,9 @@ export default {
 .logo {
     display: flex;
     align-items: center;
-    background: #d5e985;
-    color: #fff;
+    padding: 0 4px;
+    background: $first-brand-color;
+    color: $white-text-color;
+    line-height: 1;
 }
 </style>

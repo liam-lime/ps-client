@@ -1,6 +1,6 @@
 // COLORS Brand
-$one-brand-color: #fff;
-$two-brand-color: #fff;
+$first-brand-color: #c8e262;
+$second-brand-color: #3832a5;
 
 // COLORS Backgrounds
 $base-background-color: #FAFAFA;
@@ -10,6 +10,14 @@ $light-gray-background-color: #F3F3F3;
 $base-text-color: rgba(0, 0, 0, .80);
 $description-text-color: rgba(0, 0, 0, .59);
 $link-text-color: rgba(2, 158, 116, 1);
+$white-text-color: rgba(255, 255, 255, 1);
 
 // COLORS Interfaces
 $base-border-color: #EDEDED;
+
+// FONTS Family
+$base-font-family: 'Istok Web', sans-serif;
+$blog-font-family: 'EB Garamond', serif;
+
+// FONTS Sizes
+$base-font-size: 16px;
