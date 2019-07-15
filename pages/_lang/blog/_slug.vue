@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <Section>
+        <Section :class="'section--tight'">
             <SinglePost />
         </Section>
         <Section :class="'section--light-gray'">

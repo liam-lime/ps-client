@@ -14,5 +14,12 @@
     &--light-gray {
         background: $light-gray-background-color;
     }
+
+    &--tight {
+
+        & .container {
+            max-width: 1024px;
+        }
+    }
 }
 </style>
