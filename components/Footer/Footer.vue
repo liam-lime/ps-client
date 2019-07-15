@@ -2,6 +2,7 @@
     <footer class="footer">
         <Section>
             <span>Made by Nazar Lynovetsky</span>
+            <IconBase width="32" height="32"><IconEye /></IconBase>
         </Section>
     </footer>
 </template>

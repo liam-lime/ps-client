@@ -24,6 +24,7 @@ module.exports = {
     plugins: [
         { src: '~/plugins/i18n' },
         { src: '~/plugins/axios' },
+        { src: '~/plugins/icons' },
         { src: '~/plugins/hammer', ssr: false }
     ],
     generate: {
