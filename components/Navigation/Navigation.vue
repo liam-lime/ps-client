@@ -8,7 +8,3 @@
       </NuxtLink>
     </nav>
 </template>
-
-<style lang="scss">
-.navigation {}
-</style>

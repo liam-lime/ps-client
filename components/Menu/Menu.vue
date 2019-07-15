@@ -3,14 +3,3 @@
         Menu
     </div>
 </template>
-
-<script>
-export default {
-}
-</script>
-
-<style lang="scss">
-.menu {
-    display: none;
-}
-</style>

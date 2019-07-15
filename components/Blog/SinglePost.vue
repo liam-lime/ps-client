@@ -8,7 +8,7 @@
 export default {
     computed: {
         post() {
-            return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'], '3-amazing-ways-to-write-simple-code')
+            return this.$store.getters['blog/POST'](this.$store.getters['lang/LOCALE'], this.$route.params.slug)
         }
     }
 }
