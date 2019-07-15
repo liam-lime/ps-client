@@ -1,5 +1,5 @@
 <template>
-    <div class="menu">
+    <div v-if="false" class="menu">
         Menu
     </div>
 </template>

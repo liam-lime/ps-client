@@ -1,7 +1,7 @@
 <template>
     <div class="banner">
-        <h2>Interested in doing a project together?</h2>
-        <Button :onClick="onClickEmailButton">Email me</Button>
+        <h2>{{ $t('banners.interested-in-doing-a-project-together') }}</h2>
+        <Button :onClick="onClickEmailButton">{{ $t('buttons.email-me') }}</Button>
     </div>
 </template>
 

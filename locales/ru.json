@@ -6,8 +6,14 @@
     "ukrainian": "Украинская версія",
     "russian": "Российская версія"
   },
+  "buttons": {
+      "email-me": "Напишите мне"
+  },
   "icons": {
       "eye": "Иконка глаза"
+  },
+  "banners": {
+      "interested-in-doing-a-project-together": "Заинтересованы в совместном проекте?"
   },
   "home": {
     "title": "Приветствуем!",
