@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         onOpenPost(slug) {
-            this.$router.push(`/blog/${slug}`)
+            this.$router.push(`/${this.$store.getters['lang/LOCALE']}/blog/${slug}`)
         }
     }
 }

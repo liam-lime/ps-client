@@ -1,6 +1,12 @@
 <template>
     <div class="single-post">
-        <h1>{{ post.title }}</h1>
+        <header class="single-post__header">
+            <h1>{{ post.title }}</h1>
+        </header>
+        <div class="single-post__main" v-html="post.content"></div>
+        <footer class="single-post__footer">
+            <p>Author: Nazar Lynovetsky</p>
+        </footer>
     </div>
 </template>
 
