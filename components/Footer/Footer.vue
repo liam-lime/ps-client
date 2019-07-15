@@ -2,7 +2,12 @@
     <footer class="footer">
         <Section>
             <span>Made by Nazar Lynovetsky</span>
-            <IconBase width="32" height="32"><IconEye /></IconBase>
+            <IconBase
+                :width="$icon.size.base"
+                :height="$icon.size.base"
+                :iconColor="$icon.color.base"
+                :iconName="$t('icons.eye')"
+            ><IconEye /></IconBase>
         </Section>
     </footer>
 </template>
