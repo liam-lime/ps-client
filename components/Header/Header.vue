@@ -20,7 +20,7 @@
 <script>
 import Button from "~/components/Button/Button"
 import Logo from "~/components/Logo/Logo"
-import PageTitle from "~/components/Header/PageTitle"
+import PageTitle from "~/components/Page/PageTitle"
 import Navigation from "~/components/Navigation/Navigation"
 
 export default {
