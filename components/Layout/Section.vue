@@ -10,32 +10,34 @@ export default {
         backgroundColor: {
             type: String,
             default: 'transparent'
+        },
+        borderTop: {
+            type: Boolean,
+            default: false
+        },
+        borderBottom: {
+            type: Boolean,
+            default: false
+        },
+        borderColor: {
+            type: String,
+            default: '#EDEDED'
+        },
+        paddingSize: {
+            type: Number,
+            default: 50
         }
     },
     computed: {
         cssProperties() {
             return {
-                'background-color': this.backgroundColor
+                'background-color': this.backgroundColor,
+                'padding-top': `${this.paddingSize}px`,
+                'padding-bottom': `${this.paddingSize}px`,
+                'border-top': this.borderTop ? `1px solid ${this.borderColor}` : '',
+                'border-bottom': this.borderBottom ? `1px solid ${this.borderColor}` : ''
             }
         }
     }
 }
 </script>
-
-<style lang="scss">
-.section {
-    padding: 50px 0;
-    border-bottom: 1px solid $base-border-color;
-
-    &--light-gray {
-        background: $light-gray-background-color;
-    }
-
-    &--tight {
-
-        & .container {
-            max-width: 1024px;
-        }
-    }
-}
-</style>

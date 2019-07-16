@@ -1,9 +1,13 @@
 <template>
     <div class="page">
-        <Section>
+        <Section
+            :borderBottom="true"
+        >
             <Container>
-                <h1>{{ $t('home.title') }}</h1>
-                <p>{{ $t('home.introduction') }}</p>
+                <PageIntro
+                    :title="$t('home.title')"
+                    :introduction="$t('home.introduction')"
+                />
             </Container>
         </Section>
         <Section>
@@ -11,7 +15,9 @@
                 <PostList />
             </Container>
         </Section>
-        <Section :backgroundColor="'#ff0000'">
+        <Section
+            :backgroundColor="'#F4D386'"
+        >
             <Container>
                 <CallForEmail />
             </Container>
@@ -20,6 +26,7 @@
 </template>
 
 <script>
+import PageIntro from "~/components/Page/PageIntro"
 import PostList from "~/components/Blog/PostList"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -28,6 +35,7 @@ export default {
         return { title: this.$t('home.title') }
     },
     components: {
+        PageIntro,
         PostList,
         CallForEmail
     }
