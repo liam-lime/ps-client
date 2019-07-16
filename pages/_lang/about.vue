@@ -1,17 +1,20 @@
 <template>
     <div class="page">
         <Section>
-            <h1>{{ $t('about.title') }}</h1>
-            <p>{{ $t('about.introduction') }}</p>
+            <Container>
+                <h1>{{ $t('about.title') }}</h1>
+                <p>{{ $t('about.introduction') }}</p>
+            </Container>
         </Section>
-        <Section :class="'section--light-gray'">
-            <CallForEmail />
+        <Section>
+            <Container>
+                <CallForEmail />
+            </Container>
         </Section>
     </div>
 </template>
 
 <script>
-import Section from "~/components/Section/Section"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
@@ -19,7 +22,6 @@ export default {
         return { title: this.$t('about.title') }
     },
     components: {
-        Section,
         CallForEmail
     }
 }

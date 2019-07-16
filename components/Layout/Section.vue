@@ -1,9 +1,7 @@
 <template>
-    <section class="section">
-        <div class="container">
-            <slot></slot>
-        </div>
-    </section>
+    <div class="section">
+        <slot></slot>
+    </div>
 </template>
 
 <style lang="scss">

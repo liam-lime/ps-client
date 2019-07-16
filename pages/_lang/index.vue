@@ -1,20 +1,25 @@
 <template>
     <div class="page">
         <Section>
-            <h1>{{ $t('home.title') }}</h1>
-            <p>{{ $t('home.introduction') }}</p>
+            <Container>
+                <h1>{{ $t('home.title') }}</h1>
+                <p>{{ $t('home.introduction') }}</p>
+            </Container>
         </Section>
         <Section>
-            <PostList />
+            <Container>
+                <PostList />
+            </Container>
         </Section>
-        <Section :class="'section--light-gray'">
-            <CallForEmail />
+        <Section>
+            <Container>
+                <CallForEmail />
+            </Container>
         </Section>
     </div>
 </template>
 
 <script>
-import Section from "~/components/Section/Section"
 import PostList from "~/components/Blog/PostList"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -23,7 +28,6 @@ export default {
         return { title: this.$t('home.title') }
     },
     components: {
-        Section,
         PostList,
         CallForEmail
     }

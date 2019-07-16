@@ -1,16 +1,19 @@
 <template>
     <div class="page">
         <Section>
-            <PostList />
+            <Container>
+                <PostList />
+            </Container>
         </Section>
-        <Section :class="'section--light-gray'">
-            <CallForEmail />
+        <Section>
+            <Container>
+                <CallForEmail />
+            </Container>
         </Section>
     </div>
 </template>
 
 <script>
-import Section from "~/components/Section/Section"
 import PostList from "~/components/Blog/PostList"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -19,7 +22,6 @@ export default {
         return { title: 'Post List' }
     },
     components: {
-        Section,
         PostList,
         CallForEmail
     }

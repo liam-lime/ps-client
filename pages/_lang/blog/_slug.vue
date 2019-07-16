@@ -1,16 +1,19 @@
 <template>
     <div class="page">
-        <Section :class="'section--tight'">
-            <SinglePost />
+        <Section>
+            <Container>
+                <SinglePost />
+            </Container>
         </Section>
-        <Section :class="'section--light-gray'">
-            <CallForEmail />
+        <Section>
+            <Container>
+                <CallForEmail />
+            </Container>
         </Section>
     </div>
 </template>
 
 <script>
-import Section from "~/components/Section/Section"
 import SinglePost from "~/components/Blog/SinglePost"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -19,7 +22,6 @@ export default {
         return { title: 'Single Post' }
     },
     components: {
-        Section,
         SinglePost,
         CallForEmail
     }
