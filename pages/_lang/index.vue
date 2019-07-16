@@ -11,7 +11,7 @@
                 <PostList />
             </Container>
         </Section>
-        <Section>
+        <Section :backgroundColor="'#ff0000'">
             <Container>
                 <CallForEmail />
             </Container>

@@ -1,8 +1,26 @@
 <template>
-    <div class="section">
+    <div class="section" :style="cssProperties">
         <slot></slot>
     </div>
 </template>
+
+<script>
+export default {
+    props: {
+        backgroundColor: {
+            type: String,
+            default: 'transparent'
+        }
+    },
+    computed: {
+        cssProperties() {
+            return {
+                'background-color': this.backgroundColor
+            }
+        }
+    }
+}
+</script>
 
 <style lang="scss">
 .section {
