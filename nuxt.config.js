@@ -22,9 +22,10 @@ module.exports = {
         middleware: 'i18n'
     },
     plugins: [
+        { src: '~/plugins/globalCssProperties' },
+        { src: '~/plugins/globalComponents' },
         { src: '~/plugins/i18n' },
         { src: '~/plugins/axios' },
-        { src: '~/plugins/globalComponents' },
         { src: '~/plugins/icons' },
         { src: '~/plugins/hammer', ssr: false }
     ],

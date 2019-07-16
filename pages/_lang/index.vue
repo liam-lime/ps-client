@@ -16,7 +16,7 @@
             </Container>
         </Section>
         <Section
-            :backgroundColor="'#F4D386'"
+            :backgroundColor="$css.color.firstBrand"
         >
             <Container>
                 <CallForEmail />
