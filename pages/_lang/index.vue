@@ -15,7 +15,10 @@
                 </PostList>
             </Container>
         </Section>
-        <Section v-background="'#9bc2c4'" v-border:1.top.bottom="'#FF0000'">
+        <Section
+            v-background="$css.color.background.lightGray"
+            v-border.top.bottom
+        >
             <Container>
                 <CallForEmail />
             </Container>
