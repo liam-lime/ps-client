@@ -2,23 +2,29 @@ import Vue from 'vue'
 
 Vue.prototype.$css = {
     color: {
-        general: {
-            primary: '#F4D386',
-            secondary: '#38206D',
-            white: '#FFF',
-            lightestGray: '#FAFAFA',
-            lightGray: '#F3F3F3',
-            gray: '#EDEDED'
-        },
-        text: {
-            primary: 'rgba(0, 0, 0, .80)',
-            secondary: 'rgba(0, 0, 0, .35)',
-            link: '#89BDCB',
-        },
+        cheese: '#FFBE93',
+        purple: '#220F33',
+        colar: '#F67E7D',
+        ruby: '#843B62',
+        taupe: '#74546A',
+        white: '#FFF',
+
+        lightestGray: '#FAFAFA',
+        lightGray: '#F3F3F3',
+        gray: '#EDEDED',
+
+        textPrimary: 'rgba(0, 0, 0, .80)',
+        textSeconadary: 'rgba(0, 0, 0, .35)'
     },
     border: {
         width: {
             default: '1px'
         }
+    },
+    padding: {
+        none: '0px',
+        small: '25px',
+        default: '50px',
+        big: '100px'
     }
 }

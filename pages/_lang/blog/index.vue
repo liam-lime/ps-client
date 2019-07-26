@@ -5,7 +5,7 @@
                 <PostList />
             </Container>
         </Section>
-        <Section v-background="$css.color.general.primary">
+        <Section v-background="$css.color.cheese">
             <Container>
                 <CallForEmail />
             </Container>
