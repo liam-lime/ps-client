@@ -26,5 +26,11 @@ Vue.prototype.$css = {
         small: '25px',
         default: '50px',
         big: '100px'
+    },
+    container: {
+        maxWidth: {
+            default: '1400px',
+            small: '1024px'
+        }
     }
 }

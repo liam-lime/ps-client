@@ -1,13 +1,30 @@
 <template>
-    <div class="container">
+    <div class="container" :style="cssProperties">
         <slot></slot>
     </div>
 </template>
 
+<script>
+export default {
+    props: {
+        maxWidth: {
+            type: String,
+            default: '1400px'
+        }
+    },
+    computed: {
+        cssProperties() {
+            return {
+                'max-width': this.maxWidth
+            }
+        }
+    }
+}
+</script>
+
 <style lang="scss">
 .container {
     box-sizing: border-box;
-    max-width: 1400px;
     width: 100%;
     padding: 0 7%;
     margin-right: auto;

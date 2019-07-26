@@ -1,7 +1,7 @@
 <template>
     <div class="page">
         <Section>
-            <Container>
+            <Container :maxWidth="$css.container.maxWidth.small">
                 <SinglePost />
             </Container>
         </Section>
