@@ -2,8 +2,8 @@ import Vue from 'vue'
 import { capitalize } from '../services/helper/strings'
 
 Vue.directive('background', {
-    inserted(element, binding) {
-        element.style.background = binding.value
+    inserted(element, binding, vnode) {
+        element.style.background = binding.value ? binding.value : vnode.context.$css.color.general.lightestGray
     }
 })
 
