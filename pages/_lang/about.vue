@@ -1,12 +1,12 @@
 <template>
     <div class="page">
-        <Section>
+        <Section v-border.bottom>
             <Container>
                 <h1>{{ $t('about.title') }}</h1>
                 <p>{{ $t('about.introduction') }}</p>
             </Container>
         </Section>
-        <Section>
+        <Section v-background="$css.color.general.primary">
             <Container>
                 <CallForEmail />
             </Container>
