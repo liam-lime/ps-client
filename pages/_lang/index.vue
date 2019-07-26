@@ -1,11 +1,8 @@
 <template>
     <div class="page">
-        <Section>
+        <Section v-border.bottom>
             <Container>
-                <PageIntro
-                    :title="$t('home.title')"
-                    :introduction="$t('home.introduction')"
-                />
+                <PageIntro :title="$t('home.title')" :introduction="$t('home.introduction')" />
             </Container>
         </Section>
         <Section>
@@ -15,10 +12,7 @@
                 </PostList>
             </Container>
         </Section>
-        <Section
-            v-background="$css.color.background.lightGray"
-            v-border.top.bottom
-        >
+        <Section v-background="$css.color.general.primary">
             <Container>
                 <CallForEmail />
             </Container>
