@@ -1,8 +1,6 @@
 <template>
     <div class="page">
-        <Section
-            :borderBottom="true"
-        >
+        <Section :borderBottom="true">
             <Container>
                 <PageIntro
                     :title="$t('home.title')"
@@ -12,12 +10,12 @@
         </Section>
         <Section>
             <Container>
-                <PostList />
+                <PostList #default="{ post }">
+                    <PostCard :post="post" />
+                </PostList>
             </Container>
         </Section>
-        <Section
-            :backgroundColor="$css.color.firstBrand"
-        >
+        <Section :backgroundColor="$css.color.firstBrand">
             <Container>
                 <CallForEmail />
             </Container>
@@ -28,6 +26,7 @@
 <script>
 import PageIntro from "~/components/Page/PageIntro"
 import PostList from "~/components/Blog/PostList"
+import PostCard from "~/components/Blog/PostCard"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
@@ -37,6 +36,7 @@ export default {
     components: {
         PageIntro,
         PostList,
+        PostCard,
         CallForEmail
     }
     // async fetch ({ store }) {

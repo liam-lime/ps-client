@@ -1,25 +1,24 @@
 <template>
-    <div class="post-list">
+    <ul class="post-list">
         <template v-if="!posts.length">
-            <h3>Posts not found.</h3>
+            <li>Posts not found.</li>
         </template>
         <template v-if="posts.length">
-            <PostCard
+            <li
+                class="post-list__item"
                 v-for="post in posts"
                 :key="post.id"
-                :post="post"
-            />
+            >
+                <slot :post="post"></slot>
+            </li>
         </template>
-    </div>
+    </ul>
 </template>
 
 <script>
-import PostCard from "~/components/Blog/PostCard"
+
 
 export default {
-    components: {
-        PostCard
-    },
     computed: {
         posts () {
             return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
