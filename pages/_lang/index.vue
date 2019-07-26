@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <Section :borderBottom="true">
+        <Section>
             <Container>
                 <PageIntro
                     :title="$t('home.title')"
@@ -15,7 +15,7 @@
                 </PostList>
             </Container>
         </Section>
-        <Section :backgroundColor="$css.color.firstBrand">
+        <Section v-background="'#9bc2c4'" v-border:1.top.bottom="'#FF0000'">
             <Container>
                 <CallForEmail />
             </Container>
