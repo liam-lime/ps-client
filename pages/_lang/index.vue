@@ -7,9 +7,9 @@
         </Section>
         <Section>
             <Container>
-                <PostList #default="{ post }">
-                    <PostCard :post="post" />
-                </PostList>
+                <List :items="posts" #default="{ item }">
+                    <PostCard :post="item" />
+                </List>
             </Container>
         </Section>
         <Section v-background="$css.color.cheese">
@@ -22,7 +22,7 @@
 
 <script>
 import PageIntro from "~/components/Page/PageIntro"
-import PostList from "~/components/Blog/PostList"
+import List from "~/components/UI/List"
 import PostCard from "~/components/Blog/PostCard"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -32,9 +32,14 @@ export default {
     },
     components: {
         PageIntro,
-        PostList,
+        List,
         PostCard,
         CallForEmail
+    },
+    computed: {
+        posts () {
+            return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
+        }
     }
     // async fetch ({ store }) {
     //     if (!store.getters['blog/POSTS'].length) {

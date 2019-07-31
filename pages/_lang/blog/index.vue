@@ -1,10 +1,5 @@
 <template>
     <div class="page">
-        <Section>
-            <Container>
-                <PostList />
-            </Container>
-        </Section>
         <Section v-background="$css.color.cheese">
             <Container>
                 <CallForEmail />
@@ -14,7 +9,6 @@
 </template>
 
 <script>
-import PostList from "~/components/Blog/PostList"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
@@ -22,7 +16,6 @@ export default {
         return { title: 'Post List' }
     },
     components: {
-        PostList,
         CallForEmail
     }
 }
