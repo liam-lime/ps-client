@@ -30,21 +30,21 @@ module.exports = {
         { src: '~/plugins/components' },
         { src: '~/plugins/hammer', ssr: false }
     ],
-    generate: {
-        routes: [
-            '/',
-            '/about',
-            '/blog',
-
-            '/ua',
-            '/ua/about',
-            '/ua/blog',
-
-            '/ru',
-            '/ru/about',
-            '/ru/blog'
-        ]
-    },
+    // generate: {
+    //     routes: [
+    //         '/',
+    //         '/about',
+    //         '/blog',
+    //
+    //         '/ua',
+    //         '/ua/about',
+    //         '/ua/blog',
+    //
+    //         '/ru',
+    //         '/ru/about',
+    //         '/ru/blog'
+    //     ]
+    // },
     build: {
         /*
         ** Run ESLint on save
