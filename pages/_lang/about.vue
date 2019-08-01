@@ -2,8 +2,7 @@
     <div class="page">
         <Section v-border.bottom>
             <Container>
-                <h1>{{ $t('about.title') }}</h1>
-                <p>{{ $t('about.introduction') }}</p>
+                <PageIntro :title="$t('about.title')" :introduction="$t('about.introduction')" />
             </Container>
         </Section>
         <Section v-background="$css.color.cheese">
@@ -15,6 +14,7 @@
 </template>
 
 <script>
+import PageIntro from "~/components/Page/PageIntro"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
@@ -22,6 +22,7 @@ export default {
         return { title: this.$t('about.title') }
     },
     components: {
+        PageIntro,
         CallForEmail
     }
 }
