@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <Section v-border.bottom>
+        <Section :padding="$mq | mq({ desktop: $css.padding.big })" v-border.bottom>
             <Container>
                 <PageIntro :title="$t('about.title')" :introduction="$t('about.introduction')" />
             </Container>

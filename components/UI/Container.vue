@@ -9,7 +9,7 @@ export default {
     props: {
         maxWidth: {
             type: String,
-            default: '1400px'
+            default: '1330px'
         }
     },
     computed: {

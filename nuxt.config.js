@@ -22,6 +22,7 @@ module.exports = {
         middleware: 'i18n'
     },
     plugins: [
+        { src: '~/plugins/mq' },
         { src: '~/plugins/css' },
         { src: '~/plugins/directives' },
         { src: '~/plugins/i18n' },
