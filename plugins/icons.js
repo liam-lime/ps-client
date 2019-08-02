@@ -10,6 +10,7 @@ Vue.prototype.$icon = {
         base: '#63303e'
     },
     size: {
-        base: 32
+        base: 32,
+        big: 64
     }
 }

@@ -9,11 +9,12 @@ export default {
     props: {
         maxWidth: {
             type: String,
-            default: '1330px'
+            default: ''
         }
     },
     computed: {
         cssProperties() {
+            if (!this.maxWidth) return {}
             return {
                 'max-width': this.maxWidth
             }
@@ -24,8 +25,8 @@ export default {
 
 <style lang="scss">
 .container {
-    box-sizing: border-box;
     width: 100%;
+    max-width: 1330px;
     padding: 0 7%;
     margin-right: auto;
     margin-left: auto;

@@ -1,9 +1,9 @@
 <template>
     <header class="header">
         <div class="header__inner container">
-            <div class="header__item">
+            <!-- <div class="header__item">
                 <Button :onClick="onClickMenuButton">Menu</Button>
-            </div>
+            </div> -->
             <div class="header__item">
                 <Logo />
             </div>
@@ -18,14 +18,12 @@
 </template>
 
 <script>
-import Button from "~/components/Button/Button"
 import Logo from "~/components/Logo/Logo"
 import PageTitle from "~/components/Page/PageTitle"
 import Navigation from "~/components/Navigation/Navigation"
 
 export default {
     components: {
-        Button,
         Logo,
         PageTitle,
         Navigation
@@ -52,6 +50,8 @@ export default {
 
     &__item {
         margin-right: 24px;
+        display: flex;
+        align-items: center;
 
         &:last-child {
             margin-right: 0;

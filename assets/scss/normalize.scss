@@ -347,3 +347,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Add Border box Box sizing to all tags.
+ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}

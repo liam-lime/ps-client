@@ -6,12 +6,7 @@
 </template>
 
 <script>
-import Button from "~/components/Button/Button"
-
 export default {
-    components: {
-        Button
-    },
     methods: {
         onClickEmailButton() {
             console.log('Test Button Clicked!')
@@ -19,3 +14,9 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.banner {
+    text-align: center;
+}
+</style>
