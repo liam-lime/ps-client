@@ -9,11 +9,12 @@ export default {
     props: {
         padding: {
             type: String,
-            default: '50px'
+            default: ''
         }
     },
     computed: {
         cssProperties() {
+            if (!this.padding) return {}
             return {
                 'padding-top': this.padding,
                 'padding-bottom': this.padding
@@ -22,3 +23,10 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+</style>
