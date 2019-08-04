@@ -30,6 +30,7 @@ export default {
 
     &__introduction {
         font-size: 20px;
+        color: $color-text-secondary;
         margin-bottom: 0;
     }
 }

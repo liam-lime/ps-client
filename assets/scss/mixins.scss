@@ -1,0 +1,20 @@
+// Small devices
+@mixin tablet {
+   @media (min-width: #{$screen-tablet-min}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin desktop {
+   @media (min-width: #{$screen-desktop-min}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin tv {
+   @media (min-width: #{$screen-tv-min}) {
+       @content;
+   }
+}

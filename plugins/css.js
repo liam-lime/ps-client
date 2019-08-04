@@ -16,6 +16,12 @@ Vue.prototype.$css = {
         textPrimary: 'rgba(0, 0, 0, .80)',
         textSeconadary: 'rgba(0, 0, 0, .35)'
     },
+    icon: {
+        size: {
+            default: 36,
+            big: 64
+        }
+    },
     border: {
         width: {
             default: '1px'

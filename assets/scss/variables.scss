@@ -1,23 +1,47 @@
-// COLORS Brand
-$first-brand-color: #FFBE93;
-$second-brand-color: #220F33;
+// font familys
+$font-family-primary: 'Istok Web', sans-serif;
+$font-family-secondary: 'EB Garamond', serif;
 
-// COLORS Backgrounds
-$base-background-color: #FAFAFA;
-$light-gray-background-color: #F3F3F3;
 
-// COLORS Text
-$base-text-color: rgba(0, 0, 0, .80);
-$description-text-color: rgba(0, 0, 0, .40);
-$link-text-color: #74546A;
-$white-text-color: rgba(255, 255, 255, 1);
+// font sizes
+$font-size-default: 18px;
 
-// COLORS Interfaces
-$base-border-color: #EDEDED;
 
-// FONTS Family
-$base-font-family: 'Istok Web', sans-serif;
-$blog-font-family: 'EB Garamond', serif;
+// colors
+$color-cheese: #FFBE93;
+$color-purple: #220F33;
+$color-colar: #F67E7D;
+$color-ruby: #843B62;
+$color-taupe: #74546A;
+$color-white: #FFF;
 
-// FONTS Sizes
-$base-font-size: 16px;
+$color-lightest-gray: #FAFAFA;
+$color-light-gray: #F3F3F3;
+$color-gray: #EDEDED;
+
+$color-text-primary: rgba(0, 0, 0, .80);
+$color-text-secondary: rgba(0, 0, 0, .35);
+
+
+// icons
+$icon-size-default: 36px;
+$icon-size-big: 64px;
+
+
+// paddings
+$padding-none: 0px;
+$padding-small: 25px;
+$padding-default: 50px;
+$padding-big: 100px;
+
+
+// containers
+$container-max-width-default: 1330px;
+$container-max-width-small: 1024px;
+
+// Screen viewport
+$screen-phone-big-min: 480px;
+$screen-tablet-min: 720px;
+$screen-tablet-big-min: 962px;
+$screen-desktop-min: 1280px;
+$screen-desktop-big-min: 1920px;

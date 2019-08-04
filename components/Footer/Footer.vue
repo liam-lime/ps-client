@@ -4,9 +4,9 @@
             <Container>
                 <span>Made by Nazar Lynovetsky</span>
                 <IconBase
-                    :width="$icon.size.big"
-                    :height="$icon.size.big"
-                    :iconColor="$icon.color.base"
+                    :width="$css.icon.size.default"
+                    :height="$css.icon.size.default"
+                    :iconColor="$css.color.purple"
                     :iconName="$t('icons.eye')"
                 ><IconEye /></IconBase>
             </Container>

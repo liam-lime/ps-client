@@ -46,3 +46,12 @@ export default {
 */
 
 </script>
+
+<style lang="scss">
+.post-card {
+
+    div {
+        color: $color-text-secondary;
+    }
+}
+</style>

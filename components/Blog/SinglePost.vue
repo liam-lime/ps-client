@@ -19,3 +19,18 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.single-post {
+
+    &__main {
+        font-family: 'EB Garamond', serif;
+        color: rgba(0, 0, 0, .80);
+        font-size: 24px;
+
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+</style>
