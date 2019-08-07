@@ -7,7 +7,7 @@
         </Section>
         <Section>
             <Container>
-                <SectionHeader />
+                <SectionHeader :title="'Latest in blog'" />
                 <List :items="posts" #default="{ item }">
                     <PostCard :post="item" />
                 </List>
