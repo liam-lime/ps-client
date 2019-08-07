@@ -1,7 +1,7 @@
 <template>
-    <div class="banner">
-        <h2>{{ $t('banners.interested-in-doing-a-project-together') }}</h2>
-        <Button :onClick="onClickEmailButton">{{ $t('buttons.email-me') }}</Button>
+    <div class="call-for-email">
+        <h2 class="call-for-email__title">{{ $t('banners.interested-in-doing-a-project-together') }}</h2>
+        <Button class="call-for-email__button" :onClick="onClickEmailButton">{{ $t('buttons.email-me') }}</Button>
     </div>
 </template>
 
@@ -9,7 +9,7 @@
 export default {
     methods: {
         onClickEmailButton() {
-            console.log('Test Button Clicked!')
+            console.log('Email Button Clicked!')
         }
     }
 }
