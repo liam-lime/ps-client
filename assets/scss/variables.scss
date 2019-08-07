@@ -3,9 +3,6 @@ $font-family-primary: 'Istok Web', sans-serif;
 $font-family-secondary: 'EB Garamond', serif;
 
 
-// font sizes
-$font-size-default: 18px;
-
 
 // colors
 $color-cheese: #FFBE93;
@@ -23,9 +20,11 @@ $color-text-primary: rgba(0, 0, 0, .80);
 $color-text-secondary: rgba(0, 0, 0, .35);
 
 
+
 // icons
 $icon-size-default: 36px;
 $icon-size-big: 64px;
+
 
 
 // paddings
@@ -35,9 +34,12 @@ $padding-default: 50px;
 $padding-big: 100px;
 
 
+
 // containers
 $container-max-width-default: 1330px;
 $container-max-width-small: 1024px;
+
+
 
 // Screen viewport
 $screen-phone-big-min: 480px;

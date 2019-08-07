@@ -7,6 +7,7 @@
         </Section>
         <Section>
             <Container>
+                <SectionHeader />
                 <List :items="posts" #default="{ item }">
                     <PostCard :post="item" />
                 </List>
@@ -22,7 +23,6 @@
 
 <script>
 import PageIntro from "~/components/Page/PageIntro"
-import List from "~/components/UI/List"
 import PostCard from "~/components/Blog/PostCard"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -32,7 +32,6 @@ export default {
     },
     components: {
         PageIntro,
-        List,
         PostCard,
         CallForEmail
     },

@@ -25,13 +25,40 @@ export default {
 .page-intro {
 
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     &__introduction {
-        font-size: 20px;
+        font-size: 1.1rem;
         color: $color-text-secondary;
         margin-bottom: 0;
+        line-height: 1.4;
+    }
+
+
+
+    @include tablet {
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__introduction {
+            font-size: 1.15rem;
+        }
+    }
+
+
+
+    @include tablet {
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__introduction {
+            font-size: 1.2rem;
+        }
     }
 }
 </style>
