@@ -1,5 +1,10 @@
 <template>
     <div class="page">
+        <Section :padding="$mq | mq({ tabletBig: $css.padding.big })" v-border.bottom>
+            <Container>
+                <PageIntro :title="$t('blog.title')" :introduction="$t('blog.introduction')" />
+            </Container>
+        </Section>
         <Section v-background="$css.color.cheese">
             <Container>
                 <CallForEmail />
@@ -9,6 +14,7 @@
 </template>
 
 <script>
+import PageIntro from "~/components/Page/PageIntro"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
@@ -16,6 +22,7 @@ export default {
         return { title: 'Post List' }
     },
     components: {
+        PageIntro,
         CallForEmail
     }
 }

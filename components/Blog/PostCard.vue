@@ -1,6 +1,6 @@
 <template>
     <div class="post-card">
-        <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="post-card__link" exact>
+        <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="post-card__link">
             <h3 class="post-card__title">{{ post.title }}</h3>
             <div class="post-card__content" v-html="post.content"></div>
         </NuxtLink>

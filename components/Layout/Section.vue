@@ -8,16 +8,16 @@
 export default {
     props: {
         padding: {
-            type: String,
-            default: ''
+            type: Number,
+            default: 0
         }
     },
     computed: {
         cssProperties() {
             if (!this.padding) return {}
             return {
-                'padding-top': this.padding,
-                'padding-bottom': this.padding
+                'padding-top': `${this.padding}px`,
+                'padding-bottom': `${this.padding}px`
             }
         }
     }

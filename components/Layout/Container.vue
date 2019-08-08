@@ -8,15 +8,15 @@
 export default {
     props: {
         maxWidth: {
-            type: String,
-            default: ''
+            type: Number,
+            default: 0
         }
     },
     computed: {
         cssProperties() {
             if (!this.maxWidth) return {}
             return {
-                'max-width': this.maxWidth
+                'max-width': `${this.maxWidth}px`
             }
         }
     }

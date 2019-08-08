@@ -24,19 +24,19 @@ Vue.prototype.$css = {
     },
     border: {
         width: {
-            default: '1px'
+            default: 1
         }
     },
     padding: {
-        none: '0px',
-        small: '25px',
-        default: '50px',
-        big: '100px'
+        none: 0,
+        small: 25,
+        default: 50,
+        big: 100
     },
     container: {
         maxWidth: {
-            default: '1330px',
-            small: '1024px'
+            default: 1330,
+            small: 1024
         }
     }
 }

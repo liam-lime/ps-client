@@ -1,26 +1,31 @@
 {
-  "links": {
-    "home": "Home",
-    "about": "About",
-    "english": "English version",
-    "ukrainian": "Ukrainian version",
-    "russian": "Russian version"
-  },
-  "buttons": {
-      "email-me": "Email me"
-  },
-  "icons": {
-      "eye": "Eye Icon"
-  },
-  "banners": {
-      "interested-in-doing-a-project-together": "Interested in doing a project together?"
-  },
-  "home": {
-    "title": "Welcome",
-    "introduction": "This is an introduction in English."
-  },
-  "about": {
-    "title": "About",
-    "introduction": "This page is made to give you more informations."
-  }
+    "links": {
+        "home": "Home",
+        "about": "About",
+        "blog": "Blog",
+        "english": "English version",
+        "ukrainian": "Ukrainian version",
+        "russian": "Russian version"
+    },
+    "buttons": {
+        "email-me": "Email me"
+    },
+    "icons": {
+        "eye": "Eye Icon"
+    },
+    "banners": {
+        "interested-in-doing-a-project-together": "Interested in doing a project together?"
+    },
+    "home": {
+        "title": "Welcome",
+        "introduction": "This is an introduction in English."
+    },
+    "about": {
+        "title": "About",
+        "introduction": "This page is made to give you more informations."
+    },
+    "blog": {
+        "title": "Blog",
+        "introduction": "This is blog."
+    }
 }
