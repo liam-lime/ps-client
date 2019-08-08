@@ -24,6 +24,9 @@ export default {
     components: {
         PageIntro,
         CallForEmail
+    },
+    created() {
+        this.$store.commit('page/SET_PAGE_TITLE', this.$t('about.title'))
     }
 }
 </script>

@@ -9,7 +9,6 @@
 </template>
 
 <script>
-// source: https://codeburst.io/creating-reusable-components-with-vue-js-button-component-503167facfde
 export default {
     props: {
         view: {
@@ -23,3 +22,15 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.button {
+    color: $color-lightest-gray;
+    background: $color-purple;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
+    cursor: pointer;
+}
+</style>

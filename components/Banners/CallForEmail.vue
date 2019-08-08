@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-.banner {
+.call-for-email {
     text-align: center;
 }
 </style>

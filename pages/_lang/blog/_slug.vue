@@ -24,6 +24,9 @@ export default {
     components: {
         SinglePost,
         CallForEmail
+    },
+    created() {
+        this.$store.commit('page/SET_PAGE_TITLE', this.$t('blog.title'))
     }
 }
 </script>

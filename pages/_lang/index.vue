@@ -39,6 +39,9 @@ export default {
         posts () {
             return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
         }
+    },
+    created() {
+        this.$store.commit('page/SET_PAGE_TITLE', this.$t('home.title'))
     }
     // async fetch ({ store }) {
     //     if (!store.getters['blog/POSTS'].length) {

@@ -8,7 +8,7 @@ module.exports = {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Istok+Web:400,400i,700&display=swap&subset=cyrillic' }
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Noto+Sans+SC:100,300,400,500,700,900&display=swap&subset=cyrillic' }
         ]
     },
     modules: ['@nuxtjs/style-resources'],

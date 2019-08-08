@@ -8,7 +8,7 @@
                 <Logo />
             </div>
             <div class="header__item">
-                <PageTitle :title="'Page'" />
+                <PageTitle />
             </div>
             <div class="header__item">
                 <Navigation />

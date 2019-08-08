@@ -1,17 +1,6 @@
 <template>
-    <div class="page-title">{{ title }}</div>
+    <div class="page-title">{{ $store.getters['page/PAGE_TITLE'] }}</div>
 </template>
-
-<script>
-export default {
-    props: {
-        title: {
-            type: String,
-            required: true
-        }
-    }
-}
-</script>
 
 <style lang="scss">
 .page-title {
