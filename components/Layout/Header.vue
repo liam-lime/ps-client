@@ -38,9 +38,13 @@ export default {
 
 <style lang="scss">
 .header {
-    padding: 20px 0;
-    background: #fff;
-    border-bottom: 1px solid #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: $color-white;
+    border-bottom: 1px solid $color-light-gray;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
 
     &__inner {
@@ -57,6 +61,10 @@ export default {
             margin-right: 0;
             margin-left: auto;
         }
+    }
+
+    @include desktop {
+        padding: 20px 0;
     }
 }
 </style>

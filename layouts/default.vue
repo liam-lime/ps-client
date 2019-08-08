@@ -22,3 +22,13 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.main {
+    padding-top: 66px;
+
+    @include desktop {
+        padding-top: 86px;
+    }
+}
+</style>
