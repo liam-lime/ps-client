@@ -22,6 +22,7 @@ module.exports = {
         middleware: 'i18n'
     },
     plugins: [
+        { src: '~/plugins/routes' },
         { src: '~/plugins/mq' },
         { src: '~/plugins/css' },
         { src: '~/plugins/directives' },
@@ -31,21 +32,6 @@ module.exports = {
         { src: '~/plugins/components' },
         { src: '~/plugins/hammer', ssr: false }
     ],
-    // generate: {
-    //     routes: [
-    //         '/',
-    //         '/about',
-    //         '/blog',
-    //
-    //         '/ua',
-    //         '/ua/about',
-    //         '/ua/blog',
-    //
-    //         '/ru',
-    //         '/ru/about',
-    //         '/ru/blog'
-    //     ]
-    // },
     build: {
         /*
         ** Run ESLint on save

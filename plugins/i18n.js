@@ -18,9 +18,9 @@ app.i18n = new VueI18n({
 
 app.i18n.path = (link) => {
   if (app.i18n.locale === app.i18n.fallbackLocale) {
-    return `/${link}`
+    return `${link}`
   }
 
-  return `/${app.i18n.locale}/${link}`
+  return `/${app.i18n.locale}${link}`
 }
 }

@@ -1,7 +1,9 @@
 <template>
-    <div class="post-card" @click="onOpenPost(post.slug)">
-        <h3>{{ post.title }}</h3>
-        <div v-html="post.content"></div>
+    <div class="post-card">
+        <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="post-card__link" exact>
+            <h3 class="post-card__title">{{ post.title }}</h3>
+            <div class="post-card__content" v-html="post.content"></div>
+        </NuxtLink>
     </div>
 </template>
 
@@ -11,11 +13,6 @@ export default {
         post: {
             type: Object,
             required: true
-        }
-    },
-    methods: {
-        onOpenPost(slug) {
-            this.$router.push(`/${this.$store.getters['lang/LOCALE']}/blog/${slug}`)
         }
     }
 }
@@ -47,10 +44,15 @@ export default {
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .post-card {
 
-    div {
+    &__link {
+        display: block;
+        text-decoration: none;
+    }
+
+    &__content {
         color: $color-text-secondary;
     }
 }
