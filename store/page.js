@@ -1,15 +1,15 @@
 export const state = () => ({
-    pageTitle: ''
+    title: ''
 })
 
 export const mutations = {
-    SET_PAGE_TITLE (state, pageTitle) {
-        state.pageTitle = pageTitle
+    SET_TITLE (state, pageTitle) {
+        state.title = pageTitle
     }
 }
 
 export const getters = {
-    PAGE_TITLE (state) {
-        return state.pageTitle
+    TITLE (state) {
+        return state.title
     }
 }

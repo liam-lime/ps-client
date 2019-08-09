@@ -1,5 +1,5 @@
 <template>
-    <div class="page-title">{{ $store.getters['page/PAGE_TITLE'] }}</div>
+    <div class="page-title">{{ $store.getters['page/TITLE'] }}</div>
 </template>
 
 <style lang="scss">

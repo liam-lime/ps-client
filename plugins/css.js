@@ -28,15 +28,21 @@ Vue.prototype.$css = {
         }
     },
     padding: {
-        none: 0,
-        small: 25,
-        default: 50,
-        big: 100
+        minimal: 1,
+        small: 30,
+        default: 60,
+        big: 120
     },
     container: {
         maxWidth: {
             default: 1330,
             small: 1024
+        }
+    },
+    button: {
+        view: {
+            button: 'button',
+            icon: 'icon',
         }
     }
 }

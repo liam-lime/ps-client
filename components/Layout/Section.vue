@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 </style>

@@ -2,6 +2,7 @@
     <button
         type="button"
         class="button"
+        :class="{'button--icon': view === 'icon'}"
         @click="onClick"
     >
         <slot>Button</slot>
@@ -27,10 +28,16 @@ export default {
 .button {
     color: $color-lightest-gray;
     background: $color-purple;
-    padding: 12px 20px;
+    padding: 13px 20px 14px;
     border: none;
     border-radius: 5px;
     font-weight: 300;
     cursor: pointer;
+    vertical-align: middle;
+
+    &--icon {
+        padding: 5px;
+        background: $color-lightest-gray;
+    }
 }
 </style>

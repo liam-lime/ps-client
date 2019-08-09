@@ -2,15 +2,12 @@ import Vue from 'vue'
 
 Vue.prototype.$routes = {
     home: {
-        path: '/',
-        name: 'home'
+        path: '/'
     },
     about: {
-        path: '/about',
-        name: 'about'
+        path: '/about'
     },
     blog: {
         path: '/blog',
-        name: 'blog'
     }
 }

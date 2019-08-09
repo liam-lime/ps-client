@@ -26,7 +26,7 @@ export default {
         CallForEmail
     },
     created() {
-        this.$store.commit('page/SET_PAGE_TITLE', this.$t('about.title'))
+        this.$store.commit('page/SET_TITLE', this.$t('about.title'))
     }
 }
 </script>
