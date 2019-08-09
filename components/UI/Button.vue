@@ -37,7 +37,7 @@ export default {
 
     &--icon {
         padding: 5px;
-        background: $color-lightest-gray;
+        background: $color-light-gray;
     }
 }
 </style>

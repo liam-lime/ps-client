@@ -25,10 +25,10 @@ export default {
 
 <style lang="scss">
 .main {
-    padding-top: 66px;
+    padding-top: 67px;
 
     @include desktop {
-        padding-top: 86px;
+        padding-top: 88px;
     }
 }
 </style>

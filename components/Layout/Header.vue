@@ -1,9 +1,18 @@
 <template>
     <header class="header">
         <div class="header__inner container">
-            <!-- <div class="header__item">
-                <Button :onClick="onClickMenuButton">Menu</Button>
-            </div> -->
+            <div class="header__item">
+                <Button :view="$css.button.view.icon" :onClick="onClickMenuButton">
+                    <IconBase
+                        :width="$css.icon.size.default"
+                        :height="$css.icon.size.default"
+                        :iconColor="$css.color.purple"
+                        :iconName="$t('icons.eye')"
+                    >
+                        <IconEye />
+                    </IconBase>
+                </Button>
+            </div>
             <div class="header__item">
                 <Logo />
             </div>
@@ -53,7 +62,7 @@ export default {
     }
 
     &__item {
-        margin-right: 24px;
+        margin-right: 10px;
         display: flex;
         align-items: center;
 
@@ -65,6 +74,10 @@ export default {
 
     @include desktop {
         padding: 20px 0;
+
+        &__item {
+            margin-right: 20px;
+        }
     }
 }
 </style>
