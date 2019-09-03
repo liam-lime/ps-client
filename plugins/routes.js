@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-Vue.prototype.$routes = {
+const ROUTES = {
     home: {
         path: '/'
     },
@@ -11,3 +11,5 @@ Vue.prototype.$routes = {
         path: '/blog',
     }
 }
+
+Vue.prototype.$routes = ROUTES

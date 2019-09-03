@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import { capitalize } from '../services/helper/strings'
 
+const BORDER = {
+    width: {
+        default: 1,
+    }
+}
+
 Vue.directive('border', {
     inserted(element, binding, vnode) {
         const value = binding.value ? binding.value : {}
@@ -13,8 +19,4 @@ Vue.directive('border', {
     }
 })
 
-Vue.prototype.$border = {
-    width: {
-        default: 1,
-    }
-}
+Vue.prototype.$border = BORDER

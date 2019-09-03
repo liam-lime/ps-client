@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-Vue.prototype.$color = {
+const COLOR = {
     cheese: '#FFBE93',
     purple: '#220F33',
     colar: '#F67E7D',
@@ -15,3 +15,5 @@ Vue.prototype.$color = {
     textPrimary: 'rgba(0, 0, 0, .80)',
     textSeconadary: 'rgba(0, 0, 0, .35)',
 }
+
+Vue.prototype.$color = COLOR

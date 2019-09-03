@@ -1,8 +1,10 @@
 import Vue from 'vue'
 
-Vue.prototype.$container = {
+const CONTAINER = {
     maxWidth: {
         default: 1330,
         small: 1024,
     }
 }
+
+Vue.prototype.$container = CONTAINER

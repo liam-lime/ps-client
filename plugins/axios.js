@@ -1,5 +1,7 @@
 import axios from 'axios'
 
-export const HTTP = axios.create({
+const CONFIG = {
     baseURL: 'https://jsonplaceholder.typicode.com/'
-})
+}
+
+export const HTTP = axios.create(CONFIG)

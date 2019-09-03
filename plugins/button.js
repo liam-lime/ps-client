@@ -1,8 +1,10 @@
 import Vue from 'vue'
 
-Vue.prototype.$button = {
+const BUTTON = {
     type: {
         button: 'button',
         icon: 'icon',
     }
 }
+
+Vue.prototype.$button = BUTTON
