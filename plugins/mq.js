@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueMq from 'vue-mq'
 
+// plugin source: https://github.com/AlexandreBonaventure/vue-mq
+
 Vue.use(VueMq, {
     breakpoints: {
         phone: 480,
