@@ -82,8 +82,8 @@ export const mutations = {
 
 export const actions = {
     async GET_POSTS ({ commit }) {
-        const response = await BlogPostsApi.getPosts()
-        commit('SET_POSTS', response.data)
+        const RESPONSE = await BlogPostsApi.getPosts()
+        commit('SET_POSTS', RESPONSE.data)
     }
 }
 
