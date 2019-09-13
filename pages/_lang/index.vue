@@ -41,7 +41,7 @@ export default {
         }
     },
     created() {
-        this.$store.commit('page/SET_TITLE', this.$t('home.title'))
+        this.$store.commit('page/SET_TITLE', this.$t('home.pageTitle'))
     }
     // async fetch ({ store }) {
     //     if (!store.getters['blog/POSTS'].length) {

@@ -17,14 +17,17 @@
         "interested-in-doing-a-project-together": "Interested in doing a project together?"
     },
     "home": {
+        "pageTitle": "Home",
         "title": "Welcome",
         "introduction": "This is an introduction in English."
     },
     "about": {
+        "pageTitle": "About",
         "title": "About",
         "introduction": "This page is made to give you more informations."
     },
     "blog": {
+        "pageTitle": "Blog",
         "title": "Blog",
         "introduction": "This is blog."
     }

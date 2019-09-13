@@ -17,14 +17,17 @@
         "interested-in-doing-a-project-together": "Зацікавлені в спільному проекті?"
     },
     "home": {
+        "pageTitle": "Головна",
         "title": "Ласкаво просимо",
         "introduction": "Це вступ на украiнскiй мові."
     },
     "about": {
+        "pageTitle": "Про нас",
         "title": "Про нас",
         "introduction": "Ця сторінка створена, щоб дати вам більше інформації."
     },
     "blog": {
+        "pageTitle": "Блог",
         "title": "Блог",
         "introduction": "Це блог."
     }

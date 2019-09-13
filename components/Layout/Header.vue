@@ -2,18 +2,6 @@
     <header class="header">
         <div class="header__inner container">
             <div class="header__item">
-                <Button :view="$button.type.icon" :onClick="onClickMenuButton">
-                    <IconBase
-                        :width="$icon.size.default"
-                        :height="$icon.size.default"
-                        :iconColor="$color.purple"
-                        :iconName="$t('icons.eye')"
-                    >
-                        <IconEye />
-                    </IconBase>
-                </Button>
-            </div>
-            <div class="header__item">
                 <Logo />
             </div>
             <div class="header__item">
@@ -36,11 +24,6 @@ export default {
         Logo,
         PageTitle,
         Navigation
-    },
-    methods: {
-        onClickMenuButton() {
-            console.log('Menu Button Clicked!')
-        }
     }
 }
 </script>
