@@ -5,6 +5,7 @@ export const state = () => ({
         en: [
             {
                 id: 1,
+                published: true,
                 date: '2018-01-12',
                 title: "3 amazing ways to write simple code",
                 slug: "3-amazing-ways-to-write-simple-code",
@@ -12,6 +13,7 @@ export const state = () => ({
             },
             {
                 id: 2,
+                published: false,
                 date: '2018-01-12',
                 title: "Error/Exception handling in Vue.js application",
                 slug: "error-exception-handling-in-vue-js-application",
@@ -19,6 +21,7 @@ export const state = () => ({
             },
             {
                 id: 3,
+                published: true,
                 date: '2018-01-12',
                 title: "Why text buttons hurt mobile usability",
                 slug: "why-text-buttons-hurt-mobile-usability",
@@ -28,6 +31,7 @@ export const state = () => ({
         ua: [
             {
                 id: 4,
+                published: true,
                 date: '2018-01-12',
                 title: "3 дивовижних способу написання простого коду",
                 slug: "3-amazing-ways-to-write-simple-code",
@@ -35,6 +39,7 @@ export const state = () => ({
             },
             {
                 id: 5,
+                published: false,
                 date: '2018-01-12',
                 title: "Обробка помилок/винятків y Vue.js додатках",
                 slug: "error-exception-handling-in-vue-js-application",
@@ -42,6 +47,7 @@ export const state = () => ({
             },
             {
                 id: 6,
+                published: false,
                 date: '2018-01-12',
                 title: "Чому текстові кнопки шкодять мобiльному юзабілiті",
                 slug: "why-text-buttons-hurt-mobile-usability",
@@ -51,6 +57,7 @@ export const state = () => ({
         ru: [
             {
                 id: 7,
+                published: false,
                 date: '2018-01-12',
                 title: "3 удивительных способа написания простого кода",
                 slug: "3-amazing-ways-to-write-simple-code",
@@ -58,6 +65,7 @@ export const state = () => ({
             },
             {
                 id: 8,
+                published: true,
                 date: '2018-01-12',
                 title: "Обработка ошибок/исключений во Vue.js приложениях",
                 slug: "error-exception-handling-in-vue-js-application",
@@ -65,6 +73,7 @@ export const state = () => ({
             },
             {
                 id: 9,
+                published: false,
                 date: '2018-01-12',
                 title: "Почему текстовые кнопки вредят мобильному юзабилити",
                 slug: "why-text-buttons-hurt-mobile-usability",

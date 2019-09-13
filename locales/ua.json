@@ -16,6 +16,13 @@
     "banners": {
         "interested-in-doing-a-project-together": "Зацікавлені в спільному проекті?"
     },
+    "footer": {
+        "copyright": "Назар Лiновецький, 2019"
+    },
+    "post": {
+        "translation-still-underway": "Переклад скоро буде доступний.",
+        "author": "Автор"
+    },
     "home": {
         "page-title": "Головна",
         "title": "Ласкаво просимо",

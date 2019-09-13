@@ -16,6 +16,13 @@
     "banners": {
         "interested-in-doing-a-project-together": "Interested in doing a project together?"
     },
+    "footer": {
+        "copyright": "Nazar Lynovetsky, 2019"
+    },
+    "post": {
+        "translation-still-underway": "Translation will be available soon.",
+        "author": "Author"
+    },
     "home": {
         "page-title": "Home",
         "title": "Welcome",

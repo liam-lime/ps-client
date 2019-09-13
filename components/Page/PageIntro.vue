@@ -50,7 +50,7 @@ export default {
 
 
 
-    @include tablet {
+    @include desktop {
 
         &__title {
             margin-bottom: 20px;

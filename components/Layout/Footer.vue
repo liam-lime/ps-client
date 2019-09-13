@@ -2,13 +2,7 @@
     <footer class="footer">
         <Section>
             <Container>
-                <span>Made by Nazar Lynovetsky</span>
-                <IconBase
-                    :width="$icon.size.default"
-                    :height="$icon.size.default"
-                    :iconColor="$color.purple"
-                    :iconName="$t('icons.eye')"
-                ><IconEye /></IconBase>
+                <span>{{ $t('footer.copyright') }}</span>
             </Container>
         </Section>
     </footer>

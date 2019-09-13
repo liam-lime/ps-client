@@ -16,6 +16,13 @@
     "banners": {
         "interested-in-doing-a-project-together": "Заинтересованы в совместном проекте?"
     },
+    "footer": {
+        "copyright": "Назар Линовецкий, 2019"
+    },
+    "post": {
+        "translation-still-underway": "Перевод будет доступен в скором времени.",
+        "author": "Автор"
+    },
     "home": {
         "page-title": "Главная",
         "title": "Приветствуем!",

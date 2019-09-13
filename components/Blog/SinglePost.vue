@@ -3,10 +3,17 @@
         <header class="single-post__header">
             <h1>{{ post.title }}</h1>
         </header>
-        <div class="single-post__main" v-html="post.content"></div>
-        <footer class="single-post__footer">
-            <p>Author: Nazar Lynovetsky</p>
-        </footer>
+        <template v-if="post.published">
+            <div class="single-post__main" v-html="post.content"></div>
+            <footer class="single-post__footer">
+                <p>{{ $t('post.author') }}: Nazar Lynovetsky</p>
+            </footer>
+        </template>
+        <template v-if="!post.published">
+            <div class="single-post__main">
+                <p>{{ $t('post.translation-still-underway') }}</p>
+            </div>
+        </template>
     </div>
 </template>
 
