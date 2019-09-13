@@ -1,11 +1,11 @@
 <template>
     <div class="page">
         <Section>
-            <Container :maxWidth="$css.container.maxWidth.small">
+            <Container :maxWidth="$container.maxWidth.small">
                 <SinglePost />
             </Container>
         </Section>
-        <Section v-background="$css.color.cheese">
+        <Section v-background="$color.cheese">
             <Container>
                 <CallForEmail />
             </Container>

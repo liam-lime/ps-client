@@ -1,11 +1,11 @@
 <template>
     <div class="page">
-        <Section :padding="$mq | mq({ tabletBig: $css.padding.big })" v-border.bottom>
+        <Section :padding="$mq | mq({ tabletBig: $padding.big })" v-border.bottom>
             <Container>
                 <PageIntro :title="$t('about.title')" :introduction="$t('about.introduction')" />
             </Container>
         </Section>
-        <Section v-background="$css.color.cheese">
+        <Section v-background="$color.cheese">
             <Container>
                 <CallForEmail />
             </Container>

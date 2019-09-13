@@ -2,11 +2,11 @@
     <header class="header">
         <div class="header__inner container">
             <div class="header__item">
-                <Button :view="$css.button.view.icon" :onClick="onClickMenuButton">
+                <Button :view="$button.type.icon" :onClick="onClickMenuButton">
                     <IconBase
-                        :width="$css.icon.size.default"
-                        :height="$css.icon.size.default"
-                        :iconColor="$css.color.purple"
+                        :width="$icon.size.default"
+                        :height="$icon.size.default"
+                        :iconColor="$color.purple"
                         :iconName="$t('icons.eye')"
                     >
                         <IconEye />

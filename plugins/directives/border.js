@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { capitalize } from '../services/helper/strings'
+import { capitalize } from '~/services/helpers/strings'
 
 const OPTIONS = {
     width: {

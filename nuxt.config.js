@@ -12,7 +12,6 @@ module.exports = {
         ]
     },
     modules: [
-        'axios', // нужно ли добавлять установленные НПМ пакеты сюда? Все?
         '@nuxtjs/style-resources'
     ],
     styleResources: {
@@ -35,8 +34,8 @@ module.exports = {
         // NPM modules
         { src: '~/plugins/modules/axios' },
         { src: '~/plugins/modules/mq' },
-        { src: '~/plugins/modules/i18n', mode: 'server' },
-        { src: '~/plugins/modules/hammer', mode: 'client' }
+        { src: '~/plugins/modules/i18n' },
+        { src: '~/plugins/modules/hammer', mode: 'client' },
 
         // Global components
         { src: '~/plugins/globalComponents/general' },

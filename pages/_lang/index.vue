@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <Section :padding="$mq | mq({ tabletBig: $css.padding.big })" v-border.bottom>
+        <Section :padding="$mq | mq({ tabletBig: $padding.big })" v-border.bottom>
             <Container>
                 <PageIntro :title="$t('home.title')" :introduction="$t('home.introduction')" />
             </Container>
@@ -13,7 +13,7 @@
                 </List>
             </Container>
         </Section>
-        <Section v-background="$css.color.cheese">
+        <Section v-background="$color.cheese">
             <Container>
                 <CallForEmail />
             </Container>
