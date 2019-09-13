@@ -11,7 +11,10 @@ module.exports = {
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Noto+Sans+SC:100,300,400,500,700,900&display=swap&subset=cyrillic' }
         ]
     },
-    modules: ['@nuxtjs/style-resources'],
+    modules: [
+        'axios', // нужно ли добавлять установленные НПМ пакеты сюда? Все?
+        '@nuxtjs/style-resources'
+    ],
     styleResources: {
         scss: [
             'assets/scss/main.scss'
@@ -22,18 +25,30 @@ module.exports = {
         middleware: 'i18n'
     },
     plugins: [
-        { src: '~/plugins/routes' },
-        { src: '~/plugins/mq' },
-        { src: '~/plugins/css' },
-        { src: '~/plugins/directiveBackground' },
-        { src: '~/plugins/directiveBorder' },
-        { src: '~/plugins/i18n' },
-        { src: '~/plugins/axios' },
-        { src: '~/plugins/icons' },
-        { src: '~/plugins/components' },
-        { src: '~/plugins/hammer', ssr: false }
+        // Injections
+        { src: '~/plugins/injections/routes' },
+        { src: '~/plugins/injections/padding' },
+        { src: '~/plugins/injections/button' },
+        { src: '~/plugins/injections/color' },
+        { src: '~/plugins/injections/container' },
+
+        // NPM modules
+        { src: '~/plugins/modules/axios' },
+        { src: '~/plugins/modules/mq' },
+        { src: '~/plugins/modules/i18n', mode: 'server' },
+        { src: '~/plugins/modules/hammer', mode: 'client' }
+
+        // Global components
+        { src: '~/plugins/globalComponents/general' },
+        { src: '~/plugins/globalComponents/icons' },
+
+        // Directives
+        { src: '~/plugins/directives/background' },
+        { src: '~/plugins/directives/border' },
+
     ],
     build: {
+        vendor: ['axios'],
         /*
         ** Run ESLint on save
         */

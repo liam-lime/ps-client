@@ -1,9 +1,8 @@
 // plugin source: https://github.com/AlexandreBonaventure/vue-mq
-
 import Vue from 'vue'
 import VueMq from 'vue-mq'
 
-const CONFIG = {
+const OPTIONS = {
     breakpoints: {
         phone: 480,
         phoneBig: 720,
@@ -14,4 +13,4 @@ const CONFIG = {
     }
 }
 
-Vue.use(VueMq, CONFIG)
+Vue.use(VueMq, OPTIONS)
