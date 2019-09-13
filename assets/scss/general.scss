@@ -53,10 +53,6 @@ pre {
 
 @include tablet {
 
-    html {
-        font-size: 17px;
-    }
-
     p {
         margin: 0 0 30px;
     }
@@ -87,7 +83,7 @@ pre {
 @include desktop {
 
     html {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     p {

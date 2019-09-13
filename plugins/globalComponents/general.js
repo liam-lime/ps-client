@@ -4,7 +4,9 @@ import SectionHeader from "~/components/Layout/SectionHeader"
 import Container from "~/components/Layout/Container"
 import List from "~/components/Layout/List"
 import Button from "~/components/UI/Button"
+import Alert from "~/components/App/Alert"
 
+Vue.component('Alert', Alert)
 Vue.component('Section', Section)
 Vue.component('SectionHeader', SectionHeader)
 Vue.component('Container', Container)

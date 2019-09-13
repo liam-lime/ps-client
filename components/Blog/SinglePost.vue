@@ -10,18 +10,17 @@
             </footer>
         </template>
         <template v-if="!post.published">
-            <div class="single-post__main">
-                <p>{{ $t('post.translation-still-underway') }}</p>
-            </div>
+            <Alert :text="$t('post.translation-still-underway')" />
         </template>
     </div>
 </template>
 
 <script>
 export default {
-    computed: {
-        post() {
-            return this.$store.getters['blog/POST'](this.$store.getters['lang/LOCALE'], this.$route.params.slug)
+    props: {
+        post: {
+            type: Object,
+            require: true
         }
     }
 }
@@ -37,7 +36,7 @@ export default {
 
         p {
             line-height: 1.5;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
     }
 }

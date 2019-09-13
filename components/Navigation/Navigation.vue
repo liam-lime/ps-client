@@ -15,16 +15,11 @@ export default {
             links: [
                 {
                     id: 1,
-                    to: this.$i18n.path(this.$routes.home.path),
-                    text: this.$t('links.home')
-                },
-                {
-                    id: 2,
                     to: this.$i18n.path(this.$routes.blog.path),
                     text: this.$t('links.blog')
                 },
                 {
-                    id: 3,
+                    id: 2,
                     to: this.$i18n.path(this.$routes.about.path),
                     text: this.$t('links.about')
                 }

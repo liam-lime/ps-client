@@ -2,7 +2,7 @@
     <div class="page">
         <Section>
             <Container :maxWidth="$container.maxWidth.small">
-                <SinglePost />
+                <SinglePost :post="post" />
             </Container>
         </Section>
         <Section v-background="$color.cheese">
@@ -25,8 +25,19 @@ export default {
         SinglePost,
         CallForEmail
     },
+    validate({ params, store }) {
+        if (store.getters['blog/POST'](store.getters['lang/LOCALE'], params.slug)) {
+            return true
+        }
+        return false
+    },
     created() {
         this.$store.commit('page/SET_TITLE', this.$t('blog.page-title'))
+    },
+    computed: {
+        post() {
+            return this.$store.getters['blog/POST'](this.$store.getters['lang/LOCALE'], this.$route.params.slug)
+        }
     }
 }
 </script>

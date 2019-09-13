@@ -29,7 +29,7 @@ export default {
     }
 
     &__introduction {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         color: $color-text-secondary;
         margin-bottom: 0;
         line-height: 1.4;
@@ -44,7 +44,7 @@ export default {
         }
 
         &__introduction {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -57,7 +57,7 @@ export default {
         }
 
         &__introduction {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
     }
 }

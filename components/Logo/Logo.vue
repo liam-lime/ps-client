@@ -1,6 +1,6 @@
 <template>
     <div class="logo" v-hammer:swipe.left="onSwipeLeft">
-        <span>NL</span>
+        <NuxtLink :to="$i18n.path($routes.home.path)" class="logo__link">NL</NuxtLink>
     </div>
 </template>
 
@@ -29,5 +29,10 @@ export default {
     font-family: $font-family-secondary;
     font-weight: 700;
     line-height: 1;
+
+    &__link {
+        color: #FFF;
+        text-decoration: none;
+    }
 }
 </style>
