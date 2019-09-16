@@ -46,6 +46,11 @@ a {
 }
 
 pre {
+    color: $color-text-secondary;
+    font-family: monospace;
+    font-size: 1.1rem;
+    padding: 10px;
+    background: $color-light-gray;
     margin: 0 0 20px;
 }
 
@@ -74,6 +79,7 @@ pre {
     }
 
     pre {
+        padding: 15px;
         margin: 0 0 30px;
     }
 }
@@ -107,6 +113,7 @@ pre {
     }
 
     pre {
+        padding: 20px;
         margin: 0 0 40px;
     }
 }
