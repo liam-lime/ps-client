@@ -2,7 +2,15 @@
     <div class="page">
         <Section :padding="$mq | mq({ tabletBig: $padding.big })" v-border.bottom>
             <Container>
-                <PageIntro :title="$t('home.title')" :introduction="$t('home.introduction')" />
+                <PageIntro :title="$t('home.title')" />
+            </Container>
+        </Section>
+        <Section v-border.bottom>
+            <Container>
+                <SectionHeader :title="'Services'" />
+                <List :items="services" #default="{ item }">
+                    <ServiceCard :service="item" />
+                </List>
             </Container>
         </Section>
         <Section>
@@ -23,6 +31,7 @@
 
 <script>
 import PageIntro from "~/components/Page/PageIntro"
+import ServiceCard from "~/components/Portfolio/ServiceCard"
 import PostCard from "~/components/Blog/PostCard"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -32,11 +41,18 @@ export default {
     },
     components: {
         PageIntro,
+        ServiceCard,
         PostCard,
         CallForEmail
     },
     computed: {
-        posts () {
+        about() {
+            return this.$store.getters['portfolio/ABOUT'](this.$store.getters['lang/LOCALE'])
+        },
+        services() {
+            return this.$store.getters['portfolio/SERVICES'](this.$store.getters['lang/LOCALE'])
+        },
+        posts() {
             return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
         }
     },
