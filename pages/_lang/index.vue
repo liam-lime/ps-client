@@ -7,15 +7,15 @@
         </Section>
         <Section v-border.bottom>
             <Container>
-                <SectionHeader :title="'Services'" />
-                <List :items="services" #default="{ item }">
+                <SectionHeader :title="$t('sections.services')" />
+                <List :items="portfolio.services" #default="{ item }">
                     <ServiceCard :service="item" />
                 </List>
             </Container>
         </Section>
         <Section>
             <Container>
-                <SectionHeader :title="'Latest in blog'" />
+                <SectionHeader :title="$t('sections.latest-in-blog')" />
                 <List :items="posts" #default="{ item }">
                     <PostCard :post="item" />
                 </List>
@@ -46,14 +46,11 @@ export default {
         CallForEmail
     },
     computed: {
-        about() {
-            return this.$store.getters['portfolio/ABOUT'](this.$store.getters['lang/LOCALE'])
-        },
-        services() {
-            return this.$store.getters['portfolio/SERVICES'](this.$store.getters['lang/LOCALE'])
-        },
+        portfolio() {
+            return this.$store.getters['portfolio/PORTFOLIO'](this.$store.getters['lang/LOCALE'])
+        }
         posts() {
-            return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
+            return this.$store.getters['portfolio/POSTS'](this.$store.getters['lang/LOCALE'])
         }
     },
     created() {

@@ -23,6 +23,11 @@
         "translation-still-underway": "Translation will be available soon.",
         "author": "Author"
     },
+    "sections": {
+        "latest-in-blog": "Latest in blog",
+        "services": "Services",
+        "about-me": "About"
+    },
     "home": {
         "page-title": "Home",
         "title": "Hello, my name is Nazar. I am a Full Stack Front End Developer living in Kyiv, Ukraine.",

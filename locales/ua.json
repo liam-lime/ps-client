@@ -23,6 +23,11 @@
         "translation-still-underway": "Переклад скоро буде доступний.",
         "author": "Автор"
     },
+    "sections": {
+        "latest-in-blog": "Останнi пости",
+        "services": "Сервiси",
+        "about-me": "Про мене"
+    },
     "home": {
         "page-title": "Головна",
         "title": "Ласкаво просимо",

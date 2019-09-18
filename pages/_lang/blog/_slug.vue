@@ -19,7 +19,7 @@ import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
     head() {
-        return { title: 'Single Post' }
+        return { title: this.post.title }
     },
     components: {
         SinglePost,
