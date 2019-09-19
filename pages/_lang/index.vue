@@ -30,12 +30,17 @@
 </template>
 
 <script>
+// mixins
+import page from '~/components/Page/PageIntro'
+
+// components
 import PageIntro from "~/components/Page/PageIntro"
 import ServiceCard from "~/components/Portfolio/ServiceCard"
 import PostCard from "~/components/Blog/PostCard"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
 export default {
+    mixins: [page],
     head() {
         return { title: this.$t('home.title') }
     },
@@ -48,13 +53,13 @@ export default {
     computed: {
         portfolio() {
             return this.$store.getters['portfolio/PORTFOLIO'](this.$store.getters['lang/LOCALE'])
-        }
+        },
         posts() {
-            return this.$store.getters['portfolio/POSTS'](this.$store.getters['lang/LOCALE'])
+            return this.$store.getters['blog/POSTS'](this.$store.getters['lang/LOCALE'])
         }
     },
     created() {
-        this.$store.commit('page/SET_TITLE', this.$t('home.page-title'))
+        this.setPageTitle(this.$t('home.page-title'))
     }
     // async fetch ({ store }) {
     //     if (!store.getters['blog/POSTS'].length) {
