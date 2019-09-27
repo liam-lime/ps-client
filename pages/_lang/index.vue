@@ -31,7 +31,7 @@
 
 <script>
 // mixins
-import page from '~/components/Page/PageIntro'
+import page from '~/mixins/page'
 
 // components
 import PageIntro from "~/components/Page/PageIntro"
