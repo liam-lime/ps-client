@@ -1,5 +1,5 @@
 <template lang="html">
-    <select class="locale-select" name="" v-model="locale">
+    <select class="locale-select" v-model="locale">
         <option value="ru">Русский</option>
         <option value="ua">Украинский</option>
         <option value="en">Английский</option>
@@ -15,33 +15,25 @@ export default {
     },
     watch: {
         locale(locale) {
-            this.generatePath(locale)
-            this.$router.push( this.generatePath(locale) )
+            this.changeLocale(locale)
         }
     },
     methods: {
+        changeLocale(locale) {
+            this.$router.push( this.generatePath(locale) )
+        },
         generatePath(locale) {
-            console.log('selected locale: ', locale);
-            console.log('');
-
-            if (locale === this._i18n.fallbackLocale) {
-                const toReplace = '^/' + this._i18n.fallbackLocale + (this.$route.fullPath.indexOf('/' + this._i18n.fallbackLocale + '/') === 0 ? '/' : '')
-                const re = new RegExp(toReplace)
-                return this.$route.fullPath.replace(re, '/')
+            var path = ''
+            if (this.$store.getters['lang/LOCALE'] === 'en') {
+                path = this.$route.fullPath
+                path = '/' + locale + path
+            } else if (locale === 'en') {
+                return this.$route.fullPath.replace(/^\/[^\/]+/, '')
+            } else {
+                path = this.$route.fullPath.replace(/^\/[^\/]+/, '')
+                path = '/' + locale + path
             }
-
-            return '/'
-
-            // const toReplace = '^/' + defaultLocale + (route.fullPath.indexOf('/' + defaultLocale + '/') === 0 ? '/' : '')
-            // const re = new RegExp(toReplace)
-            // return redirect(route.fullPath.replace(re, '/'))
-            //
-            // let path = ''
-            //
-            // if (locale === this._i18n.fallbackLocale) {
-            //     return path
-            // }
-            // return path
+            return path
         }
     }
 }

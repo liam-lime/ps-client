@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 15px;
     background: $color-white;
 }
 
@@ -27,13 +27,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 46px;
+    font-size: 48px;
     line-height: 1.2;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 36px;
     margin: 0 0 40px;
+    font-weight: 700;
 }
 
 h3 {
@@ -71,11 +73,11 @@ pre {
     }
 
     h2 {
-        font-size: 38px;
+        font-size: 44px;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     pre {
@@ -105,7 +107,7 @@ pre {
     }
 
     h2 {
-        font-size: 42px;
+        font-size: 50px;
     }
 
     h3 {
