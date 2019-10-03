@@ -8,6 +8,7 @@
                     </div>
                     <div class="footer__item">
                         <LocaleSelect />
+                        <Select v-model="selected" :options="options" />
                     </div>
                 </div>
             </Container>
@@ -19,6 +20,28 @@
 import LocaleSelect from "~/components/App/LocaleSelect"
 
 export default {
+    data() {
+        return {
+            selected: null,
+            options: [{
+              name: "Argentina",
+              code: "AR",
+            },
+            {
+              name: "United States of America",
+              code: "US"
+            },
+            {
+              name: "Germany",
+              code: "DE"
+            },
+            {
+              name: "China",
+              code: "CN"
+            }
+          ]
+        }
+    },
     components: {
         LocaleSelect
     }

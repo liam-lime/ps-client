@@ -23,17 +23,13 @@ export default {
             this.$router.push( this.generatePath(locale) )
         },
         generatePath(locale) {
-            var path = ''
             if (this.$store.getters['lang/LOCALE'] === 'en') {
-                path = this.$route.fullPath
-                path = '/' + locale + path
+                return `/${locale}${this.$route.fullPath}`
             } else if (locale === 'en') {
                 return this.$route.fullPath.replace(/^\/[^\/]+/, '')
             } else {
-                path = this.$route.fullPath.replace(/^\/[^\/]+/, '')
-                path = '/' + locale + path
+                return `/${locale}${this.$route.fullPath.replace(/^\/[^\/]+/, '')}`
             }
-            return path
         }
     }
 }
