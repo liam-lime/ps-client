@@ -7,6 +7,12 @@
         </Section>
         <Section v-border.bottom>
             <Container>
+                <SectionHeader :title="$t('sections.about-me')" />
+                <p>Front End Development is building out the visual components of a website. Using HTML, CSS , and Javascript, I build fast, interactive websites. This also may include integrating a CMS. UI/UX involves planning and iterating a site's structure and layout. Once the proper information architecture is in place, I design the visual layer to create a beautiful user experience. While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials.</p>
+            </Container>
+        </Section>
+        <Section v-border.bottom>
+            <Container>
                 <SectionHeader :title="$t('sections.services')" />
                 <List :items="portfolio.services" #default="{ item }">
                     <ServiceCard :service="item" />

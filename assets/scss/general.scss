@@ -7,7 +7,7 @@ body {
     font-family: $font-family-primary;
     font-size: 1em;
     font-weight: 400;
-    color: $color-text-primary;
+    color: $color-text-secondary;
     margin: 0;
     background: $color-lightest-gray;
 }
@@ -15,7 +15,7 @@ body {
 p {
     font-size: 1rem;
     margin: 0 0 20px;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
