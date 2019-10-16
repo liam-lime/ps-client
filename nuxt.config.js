@@ -16,7 +16,7 @@ module.exports = {
     ],
     styleResources: {
         scss: [
-            'assets/scss/main.scss'
+            'assets/scss/resources.scss'
         ]
     },
     loading: { color: '#3B8070' },

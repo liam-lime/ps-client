@@ -1,3 +1,13 @@
+<template lang="html">
+    <div class="app">
+        <slot></slot>
+    </div>
+</template>
+
+<style lang="scss">
+/*********************
+NORMILIZE
+*********************/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -354,3 +364,137 @@ template {
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+
+
+
+/*********************
+GENERAL
+*********************/
+html {
+    font-size: 16px;
+    background: $color-white;
+}
+
+body {
+    font-family: $font-family-primary;
+    font-size: 1em;
+    font-weight: 400;
+    color: $color-text-secondary;
+    margin: 0;
+    background: $color-lightest-gray;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0 0 20px;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-text-primary;
+    font-weight: 400;
+    font-family: $font-family-secondary;
+    line-height: 1.3;
+    margin: 0 0 20px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0 0 40px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+
+}
+
+a {
+    color: $color-ruby;
+}
+
+pre {
+    color: $color-text-secondary;
+    font-family: monospace;
+    font-size: 1.1rem;
+    padding: 10px;
+    background: $color-light-gray;
+    margin: 0 0 20px;
+}
+
+
+
+@include tablet {
+
+    html {
+        font-size: 17px;
+    }
+
+    p {
+        margin: 0 0 30px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 30px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    pre {
+        padding: 15px;
+        margin: 0 0 30px;
+    }
+}
+
+
+
+@include desktop {
+
+    html {
+        font-size: 18px;
+    }
+
+    p {
+        margin: 0 0 40px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 40px;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    pre {
+        padding: 20px;
+        margin: 0 0 40px;
+    }
+}
+
+</style>
