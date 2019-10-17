@@ -1,4 +1,9 @@
 {
+    "lang": {
+        "en": "English",
+        "ua": "Ukr",
+        "ru": "Russian"
+    },
     "links": {
         "home": "Главная",
         "about": "О нас",

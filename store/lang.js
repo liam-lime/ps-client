@@ -12,6 +12,9 @@ export const mutations = {
 }
 
 export const getters = {
+    LOCALES (state) {
+        return state.locales
+    },
     LOCALE (state) {
         return state.locale
     }

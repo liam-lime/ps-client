@@ -1,21 +1,36 @@
 <template lang="html">
-    <select class="locale-select" v-model="locale">
-        <option value="ru">Русский</option>
-        <option value="ua">Украинский</option>
-        <option value="en">Английский</option>
-    </select>
+    <div class="locale-select">
+        <Select v-model="locale" :options="selectOptions" />
+    </div>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            locale: this.$store.getters['lang/LOCALE']
+            locale: null
+        }
+    },
+    computed: {
+        locales() {
+            return this.$store.getters['lang/LOCALES']
+        },
+        selectOptions() {
+            let options = []
+
+            for (let i =0; i < this.locales.length; i++) {
+                options.push({
+                    code: this.locales[i],
+                    name: this.$t(`lang.${this.locales[i]}`)
+                })
+            }
+
+            return options
         }
     },
     watch: {
         locale(locale) {
-            this.changeLocale(locale)
+            this.changeLocale(locale.code)
         }
     },
     methods: {

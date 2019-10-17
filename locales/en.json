@@ -1,11 +1,16 @@
 {
+    "lang": {
+        "en": "English",
+        "ua": "Ukr",
+        "ru": "Russian"
+    },
     "links": {
         "home": "Home",
         "about": "About",
         "blog": "Blog",
-        "english": "English version",
-        "ukrainian": "Ukrainian version",
-        "russian": "Russian version"
+        "english": "Англійська версія",
+        "ukrainian": "Українська версія",
+        "russian": "Російська версія"
     },
     "buttons": {
         "email-me": "Email me"
