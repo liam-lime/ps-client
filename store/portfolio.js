@@ -15,6 +15,14 @@ export const state = () => ({
                     title: 'Some Design',
                     content: "While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials."
                 }
+            ],
+            technologies: [
+                {
+                    title: 'Vue.js'
+                },
+                {
+                    title: 'React.js'
+                },
             ]
         },
         ru: {
@@ -32,6 +40,14 @@ export const state = () => ({
                     title: 'Some Design',
                     content: "While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials."
                 }
+            ],
+            technologies: [
+                {
+                    title: 'Vue.js'
+                },
+                {
+                    title: 'React.js'
+                },
             ]
         },
         ua: {
@@ -49,6 +65,14 @@ export const state = () => ({
                     title: 'Some Design',
                     content: "While most of my attention is on interactive projects, I do branding and collateral from time to time. This includes logo design, business cards, and other printed materials."
                 }
+            ],
+            technologies: [
+                {
+                    title: 'Vue.js'
+                },
+                {
+                    title: 'React.js'
+                },
             ]
         }
     }

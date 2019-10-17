@@ -19,6 +19,14 @@
                 </List>
             </Container>
         </Section>
+        <Section v-border.bottom>
+            <Container>
+                <SectionHeader :title="'Technology Stack'" />
+                <List :items="portfolio.technologies" #default="{ item }">
+                    <TechnologyCard :technology="item" />
+                </List>
+            </Container>
+        </Section>
         <Section>
             <Container>
                 <SectionHeader :title="$t('sections.latest-in-blog')" />
@@ -42,6 +50,7 @@ import page from '~/mixins/page'
 // components
 import PageIntro from "~/components/Page/PageIntro"
 import ServiceCard from "~/components/Portfolio/ServiceCard"
+import TechnologyCard from "~/components/Portfolio/TechnologyCard"
 import PostCard from "~/components/Blog/PostCard"
 import CallForEmail from "~/components/Banners/CallForEmail"
 
@@ -53,6 +62,7 @@ export default {
     components: {
         PageIntro,
         ServiceCard,
+        TechnologyCard,
         PostCard,
         CallForEmail
     },

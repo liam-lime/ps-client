@@ -10,9 +10,9 @@
 
 <script>
 export default {
-    data() {
-        return {
-            links: [
+    computed: {
+        links() {
+            return [
                 {
                     id: 1,
                     to: this.$i18n.path(this.$routes.blog.path),
