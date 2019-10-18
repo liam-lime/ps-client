@@ -46,5 +46,15 @@ export default {
             margin-right: 0;
         }
     }
+
+    &__link {
+        display: block;
+        padding: 5px;
+
+        &:hover,
+        &:focus {
+            outline: 5px solid $color-cheese;
+        }
+    }
 }
 </style>

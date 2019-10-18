@@ -1,7 +1,7 @@
 <template>
-    <div class="logo" v-hammer:swipe.left="onSwipeLeft">
-        <NuxtLink :to="$i18n.path($routes.home.path)" class="logo__link">NL</NuxtLink>
-    </div>
+    <NuxtLink :to="$i18n.path($routes.home.path)" class="logo__link">
+        <div class="logo" v-hammer:swipe.left="onSwipeLeft">NL</div>
+    </NuxtLink>
 </template>
 
 <script>
@@ -33,6 +33,11 @@ export default {
     &__link {
         color: #FFF;
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            outline: 5px solid $color-cheese;
+        }
     }
 }
 </style>
