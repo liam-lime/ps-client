@@ -47,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 .post-card {
     background-color: $color-light-gray;
-    padding: 30px 10px;
+    padding: 20px 10px;
 
     &__link {
         color: $color-text-secondary;
@@ -59,6 +59,16 @@ export default {
         &:focus {
             outline: 5px solid $color-cheese;
         }
+    }
+
+
+    @include tablet {
+        padding: 30px 10px;
+    }
+
+
+    @include desktop {
+        padding: 40px 10px;
     }
 }
 </style>

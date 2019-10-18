@@ -416,6 +416,10 @@ h3 {
 
 }
 
+ul {
+    margin: 0 0 20px;
+}
+
 a {
     color: $color-ruby;
 }
@@ -457,6 +461,10 @@ pre {
         font-size: 28px;
     }
 
+    ul {
+        margin: 0 0 30px;
+    }
+
     pre {
         padding: 15px;
         margin: 0 0 30px;
@@ -489,6 +497,10 @@ pre {
 
     h3 {
         font-size: 30px;
+    }
+
+    ul {
+        margin: 0 0 40px;
     }
 
     pre {

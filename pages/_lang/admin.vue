@@ -7,6 +7,20 @@
         </Section>
         <Section v-border.bottom>
             <Container>
+                <h3>Blog:</h3>
+                <ul>
+                    <li><a href="#">Add Article</a></li>
+                    <li><a href="#">Edit Article</a></li>
+                    <li><a href="#">Remove Article</a></li>
+                </ul>
+                <h3>Portfolio:</h3>
+                <ul>
+                    <li><a href="#">Edit Portfolio</a></li>
+                </ul>
+            </Container>
+        </Section>
+        <Section v-border.bottom>
+            <Container>
                 <SectionHeader :title="'Add new Post'" />
                 <h3>Title:</h3>
                 <input type="text" name="" value="">
