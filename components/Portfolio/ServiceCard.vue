@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="service-card">
+    <div class="service-card text-content">
         <h3 class="service-card__title">{{ service.title }}</h3>
         <p class="service-card__content">{{ service.content }}</p>
     </div>
@@ -17,10 +17,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.service-card {
-
-    &__content {
-        color: $color-text-secondary;
-    }
-}
+.service-card {}
 </style>

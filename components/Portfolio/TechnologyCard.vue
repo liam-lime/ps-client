@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="technology-card">
+    <div class="technology-card text-content">
         <h3 class="technology-card__title">{{ technology.title }}</h3>
     </div>
 </template>
@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .technology-card {
-
+    background-color: $color-light-gray;
+    padding: 15px 10px 45px;
 }
 </style>

@@ -23,6 +23,18 @@ export const state = () => ({
                 {
                     title: 'React.js'
                 },
+                {
+                    title: 'Vue.js'
+                },
+                {
+                    title: 'React.js'
+                },
+                {
+                    title: 'Vue.js'
+                },
+                {
+                    title: 'React.js'
+                },
             ]
         },
         ru: {

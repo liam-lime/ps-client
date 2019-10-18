@@ -372,29 +372,29 @@ template {
 GENERAL
 *********************/
 html {
-    font-size: 16px;
     background: $color-white;
+    font-size: 16px;
 }
 
 body {
     font-family: $font-family-primary;
+    color: $color-text-secondary;
+    background: $color-lightest-gray;
     font-size: 1em;
     font-weight: 400;
-    color: $color-text-secondary;
+    line-height: 1.8;
     margin: 0;
-    background: $color-lightest-gray;
 }
 
 p {
     font-size: 1rem;
     margin: 0 0 20px;
-    line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-secondary;
     color: $color-text-primary;
     font-weight: 400;
-    font-family: $font-family-secondary;
     line-height: 1.3;
     margin: 0 0 20px;
 }
@@ -497,4 +497,15 @@ pre {
     }
 }
 
+
+
+/*********************
+CONTENT
+*********************/
+.text-content {
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+}
 </style>

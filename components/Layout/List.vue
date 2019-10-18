@@ -1,5 +1,5 @@
 <template>
-    <ul class="list">
+    <ul class="list list--desktop-3">
         <template v-if="!items.length">
             <li>Items not found.</li>
         </template>
@@ -31,8 +31,45 @@ export default {
 
 <style lang="scss">
 .list {
-    margin: 0;
+    margin: -10px;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        padding: 10px;
+    }
+
+    &--desktop-3 {
+
+        .list__item {
+            width: 100%;
+        }
+
+        @include tablet {
+
+            .list__item {
+                width: 50%;
+            }
+        }
+
+        @include desktop {
+
+            .list__item {
+                width: 33.33%;
+            }
+        }
+
+    }
+
+    @include tablet {
+
+    }
+
+    @include desktop {
+
+    }
 }
 </style>

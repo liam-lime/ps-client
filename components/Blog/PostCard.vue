@@ -1,10 +1,10 @@
 <template>
-    <div class="post-card">
-        <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="post-card__link">
+    <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="post-card__link">
+        <div class="post-card">
             <h3 class="post-card__title">{{ post.title }}</h3>
-            <div class="post-card__content" v-html="post.content"></div>
-        </NuxtLink>
-    </div>
+            <div class="post-card__content text-content" v-html="post.content"></div>
+        </div>
+    </NuxtLink>
 </template>
 
 <script>
@@ -46,14 +46,19 @@ export default {
 
 <style lang="scss" scoped>
 .post-card {
+    background-color: $color-light-gray;
+    padding: 30px 10px;
 
     &__link {
-        display: block;
-        text-decoration: none;
-    }
-
-    &__content {
         color: $color-text-secondary;
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            outline: 5px solid $color-cheese;
+        }
     }
 }
 </style>
