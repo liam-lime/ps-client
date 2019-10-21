@@ -19,12 +19,13 @@
                 <h3>1</h3>
                 <p>Записанный случай</p>
                 <pre>// some code</pre>
-                <h3>2</h3>
-                <p>Записанный случай</p>
-                <pre>// some code</pre>
-                <h3>3</h3>
-                <p>Записанный случай</p>
-                <pre>// some code</pre>
+            </Container>
+        </Section>
+        <Section>
+            <Container>
+                <List :items="snippets" #default="{ item }">
+                    <SnippetCard :snippet="item" />
+                </List>
             </Container>
         </Section>
     </div>
@@ -32,6 +33,7 @@
 
 <script>
 import PageIntro from "~/components/Page/PageIntro"
+import SnippetCard from "~/components/Snippets/SnippetCard"
 
 export default {
     head() {
@@ -39,9 +41,15 @@ export default {
     },
     components: {
         PageIntro,
+        SnippetCard
     },
     created() {
         this.$store.commit('page/SET_TITLE', this.$t('about.page-title'))
+    },
+    computed: {
+        snippets () {
+            return this.$store.getters['snippets/SNIPPETS'](this.$store.getters['lang/LOCALE'])
+        }
     }
 }
 </script>

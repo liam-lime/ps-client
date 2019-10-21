@@ -113,8 +113,8 @@ export const getters = {
 
     POST (state) {
         return (locale, postSlug) => {
-            return state.posts[locale].find((post) => {
-                return post.slug === postSlug
+            return state.posts[locale].find((article) => {
+                return article.slug === postSlug
             })
         }
     }

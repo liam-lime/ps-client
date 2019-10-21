@@ -427,7 +427,7 @@ a {
 pre {
     color: $color-text-secondary;
     font-family: monospace;
-    font-size: 1.1rem;
+    font-size: .9rem;
     padding: 10px;
     background: $color-light-gray;
     margin: 0 0 20px;

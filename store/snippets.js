@@ -1,4 +1,4 @@
-import BlogPostsApi from '../services/api/BlogPosts'
+import SnippetsApi from '../services/api/Snippets'
 
 export const state = () => ({
     snippets: {
@@ -7,51 +7,27 @@ export const state = () => ({
                 id: 1,
                 published: true,
                 date: '2018-01-12',
-                title: "3 amazing ways to write simple code",
-                slug: "3-amazing-ways-to-write-simple-code",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>"
-            },
-            {
-                id: 2,
-                published: false,
-                date: '2018-01-12',
-                title: "Error/Exception handling in Vue.js application",
-                slug: "error-exception-handling-in-vue-js-application",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
-            },
-            {
-                id: 3,
-                published: true,
-                date: '2018-01-12',
-                title: "Why text buttons hurt mobile usability",
-                slug: "why-text-buttons-hurt-mobile-usability",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>"
-            }
+                title: "nextTick()",
+                slug: "vuejs-next-tick",
+                additionalLinks: [
+                    {
+                        url: "https://ru.vuejs.org/v2/api/index.html#Vue-nextTick",
+                        text: "Документация"
+                    },
+                    {
+                        url: "https://medium.com/js-dojo/what-the-tick-is-vue-nexttick-c3f9870bc311",
+                        text: "Статья с медиума"
+                    }
+                ],
+                content: "<p>Callback функция, которая вызывается после каждого 'круга обновления' DOM структуры. Каждый раз когда Vue.js делает реальный ре-рендер DOM структуры.</p><pre>mounted() {this.$nextTick(() => {// The whole view is rendered, so I can safely access or query// the DOM. ¯\_(ツ)_/¯})}</pre><pre>Vue.nextTick(function () {// do something cool})</pre>"
         ],
         ua: [
             {
                 id: 4,
-                published: true,
-                date: '2018-01-12',
-                title: "3 дивовижних способу написання простого коду",
-                slug: "3-amazing-ways-to-write-simple-code",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>"
-            },
-            {
-                id: 5,
                 published: false,
                 date: '2018-01-12',
-                title: "Обробка помилок/винятків y Vue.js додатках",
-                slug: "error-exception-handling-in-vue-js-application",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-            },
-            {
-                id: 6,
-                published: false,
-                date: '2018-01-12',
-                title: "Чому текстові кнопки шкодять мобiльному юзабілiті",
-                slug: "why-text-buttons-hurt-mobile-usability",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><pre>Some code...</pre><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+                title: "nextTick()",
+                slug: "vuejs-next-tick"
             }
         ],
         ru: [
@@ -59,25 +35,8 @@ export const state = () => ({
                 id: 7,
                 published: false,
                 date: '2018-01-12',
-                title: "3 удивительных способа написания простого кода",
-                slug: "3-amazing-ways-to-write-simple-code",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><pre>Some code...</pre><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-            },
-            {
-                id: 8,
-                published: true,
-                date: '2018-01-12',
-                title: "Обработка ошибок/исключений во Vue.js приложениях",
-                slug: "error-exception-handling-in-vue-js-application",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
-            },
-            {
-                id: 9,
-                published: false,
-                date: '2018-01-12',
-                title: "Почему текстовые кнопки вредят мобильному юзабилити",
-                slug: "why-text-buttons-hurt-mobile-usability",
-                content: "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><pre>Some code...</pre><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>"
+                title: "nextTick()",
+                slug: "vuejs-next-tick",
             }
         ]
     },
@@ -85,15 +44,15 @@ export const state = () => ({
 })
 
 export const mutations = {
-    SET_SNIPPETS (state, posts) {
-        state.posts = posts
+    SET_SNIPPETS (state, snippets) {
+        state.snippets = snippets
     }
 }
 
 export const actions = {
     async GET_SNIPPETS ({ commit }) {
-        const response = await BlogPostsApi.getPosts()
-        commit('SET_POSTS', response.data)
+        const response = await SnippetsApi.getSnippets()
+        commit('SET_SNIPPETS', response.data)
     }
 }
 
@@ -105,9 +64,9 @@ export const getters = {
     },
 
     SNIPPET (state) {
-        return (locale, postSlug) => {
-            return state.snippets[locale].find((post) => {
-                return post.slug === postSlug
+        return (locale, snippetSlug) => {
+            return state.snippets[locale].find((article) => {
+                return article.slug === snippetSlug
             })
         }
     }
