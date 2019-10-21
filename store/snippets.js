@@ -20,6 +20,7 @@ export const state = () => ({
                     }
                 ],
                 content: "<p>Callback функция, которая вызывается после каждого 'круга обновления' DOM структуры. Каждый раз когда Vue.js делает реальный ре-рендер DOM структуры.</p><pre>mounted() {this.$nextTick(() => {// The whole view is rendered, so I can safely access or query// the DOM. ¯\_(ツ)_/¯})}</pre><pre>Vue.nextTick(function () {// do something cool})</pre>"
+            }
         ],
         ua: [
             {
