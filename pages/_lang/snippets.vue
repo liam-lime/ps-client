@@ -15,7 +15,7 @@
         </Section>
         <Section v-border.bottom>
             <Container>
-                <SectionHeader :title="'Три случая использования ... оператора'" />
+                <SectionHeader :title="'Rest and Spread operators'" />
                 <h3>1</h3>
                 <p>Записанный случай</p>
                 <pre>// some code</pre>
