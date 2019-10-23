@@ -32,11 +32,32 @@ export default {
     &__main {
         font-family: 'EB Garamond', serif;
         color: rgba(0, 0, 0, .80);
-        font-size: 24px;
 
         p {
             line-height: 1.5;
-            font-size: 1.4rem;
+            font-size: 1.27rem;
+        }
+    }
+
+
+    @include tablet {
+
+        &__main {
+
+            p {
+                font-size: 1.33rem;
+            }
+        }
+    }
+
+
+    @include desktop {
+
+        &__main {
+
+            p {
+                font-size: 1.36rem;
+            }
         }
     }
 }

@@ -390,13 +390,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.2;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin: 0 0 40px;
     font-weight: 700;
 }
