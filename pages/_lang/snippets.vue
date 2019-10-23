@@ -21,27 +21,18 @@
                 <pre>// some code</pre>
             </Container>
         </Section>
-        <Section>
-            <Container>
-                <List :items="snippets" #default="{ item }">
-                    <SnippetCard :snippet="item" />
-                </List>
-            </Container>
-        </Section>
     </div>
 </template>
 
 <script>
 import PageIntro from "~/components/Page/PageIntro"
-import SnippetCard from "~/components/Snippets/SnippetCard"
 
 export default {
     head() {
         return { title: this.$t('about.title') }
     },
     components: {
-        PageIntro,
-        SnippetCard
+        PageIntro
     },
     created() {
         this.$store.commit('page/SET_TITLE', this.$t('about.page-title'))

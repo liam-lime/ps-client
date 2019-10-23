@@ -1,0 +1,7 @@
+<template>
+    <g>
+        <polygon fill="#48B884" points="109.7766 0.0009 -0.0004 188.2259 219.5526 188.2259"></polygon>
+        <polygon fill="#3F7F70" points="72.8361 188.226 255.9991 188.226 164.4181 31.198"></polygon>
+        <polygon fill="#36495D" points="72.8361 188.226 219.5521 188.226 146.1941 62.444"></polygon>
+    </g>
+</template>

@@ -18,22 +18,28 @@ export const state = () => ({
             ],
             technologies: [
                 {
-                    title: 'Vue.js'
+                    title: 'Vue.js',
+                    iconName: 'IconVue'
                 },
                 {
-                    title: 'React.js'
+                    title: 'Javascript',
+                    iconName: 'IconJavascript'
                 },
                 {
-                    title: 'Vue.js'
+                    title: 'Node.js',
+                    iconName: 'IconNode'
                 },
                 {
-                    title: 'React.js'
+                    title: 'Express.js',
+                    iconName: 'IconExpress'
                 },
                 {
-                    title: 'Vue.js'
+                    title: 'Nuxt.js',
+                    iconName: 'IconNuxt'
                 },
                 {
-                    title: 'React.js'
+                    title: 'Cordova',
+                    iconName: 'IconCordova'
                 },
             ]
         },

@@ -42,16 +42,6 @@ main {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -388,15 +378,15 @@ body {
 
 p {
     font-size: 1rem;
-    margin: 0 0 20px;
+    margin: 0 0 $padding-text-small;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-secondary;
     color: $color-text-primary;
+    margin: 0 0 $padding-text-small;
     font-weight: 400;
     line-height: 1.3;
-    margin: 0 0 20px;
 }
 
 h1 {
@@ -417,7 +407,7 @@ h3 {
 }
 
 ul {
-    margin: 0 0 20px;
+    margin: 0 0 $padding-text-small;
 }
 
 a {
@@ -430,7 +420,7 @@ pre {
     font-size: .9rem;
     padding: 10px;
     background: $color-light-gray;
-    margin: 0 0 20px;
+    margin: 0 0 $padding-text-small;
 }
 
 
@@ -442,11 +432,11 @@ pre {
     }
 
     p {
-        margin: 0 0 30px;
+        margin: 0 0 $padding-text-default;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        margin: 0 0 30px;
+        margin: 0 0 $padding-text-default;
     }
 
     h1 {
@@ -462,12 +452,12 @@ pre {
     }
 
     ul {
-        margin: 0 0 30px;
+        margin: 0 0 $padding-text-default;
     }
 
     pre {
         padding: 15px;
-        margin: 0 0 30px;
+        margin: 0 0 $padding-text-default;
     }
 }
 
@@ -480,11 +470,11 @@ pre {
     }
 
     p {
-        margin: 0 0 40px;
+        margin: 0 0 $padding-text-big;
     }
 
     h1, h2, h3, h4, h5, h6 {
-        margin: 0 0 40px;
+        margin: 0 0 $padding-text-big;
     }
 
     h1 {
@@ -500,12 +490,12 @@ pre {
     }
 
     ul {
-        margin: 0 0 40px;
+        margin: 0 0 $padding-text-big;
     }
 
     pre {
         padding: 20px;
-        margin: 0 0 40px;
+        margin: 0 0 $padding-text-big;
     }
 }
 

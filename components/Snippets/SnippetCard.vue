@@ -1,11 +1,5 @@
 <template>
-    <div class="snippet-card">
-        <h3 class="snippet-card__title">{{ snippet.title }}</h3>
-        <ul>
-            <li v=for="link in snippet.additionalLinks">{{ link.text }}</li>
-        </ul>
-        <div class="snippet-card__content text-content" v-html="snippet.content"></div>
-    </div>
+    <div class="snippet-card">Snippet</div>
 </template>
 
 <script>
