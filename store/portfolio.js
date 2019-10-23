@@ -19,7 +19,7 @@ export const state = () => ({
             technologies: [
                 {
                     title: 'Vue.js',
-                    iconName: 'IconVue'
+                    iconName: 'IconApi'
                 },
                 {
                     title: 'Javascript',

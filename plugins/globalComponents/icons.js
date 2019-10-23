@@ -9,6 +9,7 @@ import IconExpress from "~/components/Icons/IconExpress"
 import IconNode from "~/components/Icons/IconNode"
 import IconNuxt from "~/components/Icons/IconNuxt"
 import IconWordpress from "~/components/Icons/IconWordpress"
+import IconApi from "~/components/Icons/IconApi"
 
 const OPTIONS = {
     size: {
@@ -29,3 +30,4 @@ Vue.component('IconExpress', IconExpress)
 Vue.component('IconNode', IconNode)
 Vue.component('IconNuxt', IconNuxt)
 Vue.component('IconWordpress', IconWordpress)
+Vue.component('IconApi', IconApi)

@@ -10,6 +10,9 @@
             <div class="header__item">
                 <Navigation />
             </div>
+            <div class="header__item">
+                <NuxtLink :to="'/settings'" exact>☘</NuxtLink>
+            </div>
         </div>
     </header>
 </template>
@@ -49,9 +52,12 @@ export default {
         display: flex;
         align-items: center;
 
+        &:nth-last-child(2) {
+            margin-left: auto;
+        }
+
         &:last-child {
             margin-right: 0;
-            margin-left: auto;
         }
     }
 

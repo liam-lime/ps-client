@@ -6,28 +6,19 @@
                     <div class="footer__item">
                         <span>{{ $t('footer.copyright') }}</span>
                     </div>
-                    <div class="footer__item">
-                        <LocaleSelect />
-                    </div>
                 </div>
             </Container>
         </Section>
     </footer>
 </template>
 
-<script>
-import LocaleSelect from "~/components/Lang/LocaleSelect"
+<style lang="scss" scoped>
+.footer {
+    background: $color-white;
 
-export default {
-    components: {
-        LocaleSelect
+    &__inner {
+        display: flex;
+        justify-content: space-between;
     }
-}
-</script>
-
-<style lang="scss">
-.footer__inner {
-    display: flex;
-    justify-content: space-between;
 }
 </style>
