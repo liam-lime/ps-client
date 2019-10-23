@@ -1,10 +1,5 @@
 <template>
     <div class="page">
-        <Section :padding="$mq | mq({ tabletBig: $padding.big })" v-border.bottom>
-            <Container>
-                <PageIntro :title="'Snippets'" />
-            </Container>
-        </Section>
         <Section v-border.bottom>
             <Container>
                 <h3>Javascript:</h3>
@@ -36,11 +31,6 @@ export default {
     },
     created() {
         this.$store.commit('page/SET_TITLE', this.$t('about.page-title'))
-    },
-    computed: {
-        snippets () {
-            return this.$store.getters['snippets/SNIPPETS'](this.$store.getters['lang/LOCALE'])
-        }
     }
 }
 </script>
