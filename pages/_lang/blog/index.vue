@@ -12,7 +12,7 @@
                 </List>
             </Container>
         </Section>
-        <Section v-background="$color.cheese">
+        <Section v-background="$color.ocean">
             <Container>
                 <CallForEmail />
             </Container>

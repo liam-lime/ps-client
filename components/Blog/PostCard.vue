@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="post-card__link">
+    <NuxtLink :to="$i18n.path(`${$routes.blog.path}/${post.slug}`)" class="block-link">
         <div class="post-card">
             <h3 class="post-card__title">{{ post.title }}</h3>
             <div class="post-card__content text-content" v-html="post.content"></div>
@@ -48,22 +48,6 @@ export default {
 .post-card {
     padding: 20px 10px;
 
-    &__link {
-        color: $color-text-secondary;
-        background: $color-tile;
-        display: flex;
-        height: 100%;
-        text-decoration: none;
-
-        &:hover {
-            background: $color-gray;
-        }
-
-        &:focus {
-            outline: 5px solid $color-cheese;
-        }
-    }
-
 
     @include tablet {
         padding: 30px 15px;
@@ -72,6 +56,20 @@ export default {
 
     @include desktop {
         padding: 40px 20px;
+    }
+}
+
+.block-link {
+    color: $color-text-secondary;
+    background: $color-tile;
+    display: flex;
+    height: 100%;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px) translateX(-5px);
+        box-shadow: 5px 5px 0px $color-ocean;
     }
 }
 </style>
