@@ -50,7 +50,7 @@ export default {
 
     &__link {
         color: $color-text-secondary;
-        background: $color-light-gray;
+        background: $color-tile;
         display: flex;
         height: 100%;
         text-decoration: none;

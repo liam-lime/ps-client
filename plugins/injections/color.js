@@ -1,7 +1,9 @@
 import Vue from 'vue'
 
 const OPTIONS = {
-    cheese: 'rgb(232, 243, 236)',
+    ocean: '#d9ece3',
+    tile: '#f6f1e5',
+    cheese: '#d9ece3',
     purple: '#220F33',
     colar: '#F67E7D',
     ruby: '#843B62',
